@@ -5,27 +5,30 @@
 # Due Date: 03.01.21
 # ####################################################
 
-print("Enter two DISTINCT Primary Colors. (Enter selections in lowercase letters): ")
+print("Enter 2 DISTINCT Primary Colors: ")
 
-color1 = (input("Enter your first primary color: "))
-color2 = (input("Enter a different primary color: "))
+color1 = (input("Enter 1st primary color: ")).lower()
+color2 = (input("Enter 2nd primary color: ")).lower()
+# color1 = color1.lower()
+# color2 = color2.lower()
+
+print()
 
 bad = color1 != "red" and color1 != "yellow" and color1 != "blue" and \
       color2 != "red" and color2 != "yellow" and color2 != "blue"
 if bad:
-    print("You must enter PRIMARY colors. Check your spelling and case.")
+    print("You must enter PRIMARY colors. Please try again.")
 elif color2 == color1:
-    print("You must enter two DISTINCT primary colors.")
+    print("You must enter two DISTINCT primary colors. ")
 elif color1 == "red" and color2 == "yellow":
-    print("When mixed, the colors you chose create orange.")
+    print("Red + Yellow = Orange.")
 elif color1 == "yellow" and color2 == "red":
-    print("When mixed, the colors you chose create orange.")
+    print("Yellow + Red = Orange.")
 elif color1 == "red" and color2 == "blue":
-    print("When mixed, the colors you chose create purple.")
+    print("Red + Blue = Purple.")
 elif color1 == "blue" and color2 == "red":
-    print("When mixed, the colors you chose create purple.")
+    print("Blue + Red = Purple.")
 elif color1 == "blue" and color2 == "yellow":
-    print("When mixed, the colors you chose create green.")
+    print("Blue + Yellow = Green.")
 else:
-    print("When mixed, the colors you chose create green.")
-print()
+    print("Yellow + Blue = Green.")
