@@ -14,10 +14,11 @@ color2 = (input("Enter 2nd primary color: ")).lower()
 
 print()
 
-bad = color1 != "red" and color1 != "yellow" and color1 != "blue" and \
+BAD = color1 != "red" and color1 != "yellow" and color1 != "blue" and \
       color2 != "red" and color2 != "yellow" and color2 != "blue"
-if bad:
-    print("You must enter PRIMARY colors. Please try again.")
+
+if BAD: # Boolean Variable
+    print("You must enter PRIMARY colors. Please try again!")
 elif color2 == color1:
     print("You must enter two DISTINCT primary colors. ")
 elif color1 == "red" and color2 == "yellow":
