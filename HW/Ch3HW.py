@@ -5,10 +5,11 @@
 # Due Date: 03.01.21
 # ####################################################
 
-print("Enter 2 DISTINCT Primary Colors: ")
+# 7 -- Color Mixer
 
-color1 = (input("Enter 1st primary color: ")).lower()
-color2 = (input("Enter 2nd primary color: ")).lower()
+print("Enter 2 DISTINCT Primary Colors: ")
+color1 = input("Enter 1st primary color: ").lower()
+color2 = input("Enter 2nd primary color: ").lower()
 # color1 = color1.lower()
 # color2 = color2.lower()
 
@@ -22,14 +23,21 @@ if BAD: # Boolean Variable
 elif color2 == color1:
     print("You must enter two DISTINCT primary colors. ")
 elif color1 == "red" and color2 == "yellow":
-    print("Red + Yellow = Orange.")
+    print("Red + Yellow => Orange.")
 elif color1 == "yellow" and color2 == "red":
-    print("Yellow + Red = Orange.")
+    print("Yellow + Red => Orange.")
 elif color1 == "red" and color2 == "blue":
-    print("Red + Blue = Purple.")
+    print("Red + Blue => Purple.")
 elif color1 == "blue" and color2 == "red":
-    print("Blue + Red = Purple.")
+    print("Blue + Red => Purple.")
 elif color1 == "blue" and color2 == "yellow":
-    print("Blue + Yellow = Green.")
+    print("Blue + Yellow => Green.")
 else:
-    print("Yellow + Blue = Green.")
+    print("Yellow + Blue => Green.")
+
+
+# 9 -- Roulette Wheel Colors
+
+
+
+# 12 -- Software Sales
