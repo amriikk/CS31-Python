@@ -30,8 +30,10 @@ elif color1 == "yellow" and color2 == "red":
     print("Yellow + Red => Orange.")
 elif color1 == "blue" and color2 == "yellow":
     print("Blue + Yellow => Green.")
-else:
+elif color1 == "yellow" and color2 == "blue":
     print("Yellow + Blue => Green.")
+else:
+    print('Please enter a valid response! ')
 
 print('\n')
 
@@ -93,7 +95,10 @@ else:
 
 
 print(f'You purchased {numP} packages and received a {discount*100:.0f}% discount! ')
+
 subtotal = numP * package
 total = subtotal - (subtotal*discount)
 
-print(f'For a Grand Total of ${total:,.2f} (includes discount, if applicable..)') # End of Software Sales
+print(f'For a Grand Total of ${total:,.2f} (includes discount, if applicable..)') 
+
+print() # End of Software Sales
