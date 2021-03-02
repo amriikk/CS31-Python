@@ -37,37 +37,55 @@
 
 # 9 -- Roulette Wheel Colors
 
-num = int(input('Enter a pocket number from 0 - 36: '))
+# num = int(input('Enter a pocket number from 0 - 36: '))
 
-if num < 0 or num > 36:
-    print('Please enter a valid number !')
-elif num == 0:
-    print('Pocket is GREEN!')
-elif 1 <= num <=10:
-    if num % 2 == 0:
-        print('Pocket is BLACK!')
-    else:
-        print('Pocket is RED!')
-elif 11 <= num <=18:
-    if num % 2 == 0:
-        print('Pocket is RED!')
-    else:
-        print('Pocket is BLACK!')
-elif 19 <= num <=28:
-    if num % 2 == 0:
-        print('Pocket is BLACK!')
-    else:
-        print('Pocket is RED!')
-elif 29 <= num <=36:
-    if num % 2 == 0:
-        print('Pocket is RED!')
-    else:
-        print('Pocket is BLACK!')
-else:
-    print('Please try your input again! ')
+# if num < 0 or num > 36:
+#     print('Please enter a valid number !')
+# elif num == 0:
+#     print('Pocket is GREEN!')
+# elif 1 <= num <=10:
+#     if num % 2 == 0:
+#         print('Pocket is BLACK!')
+#     else:
+#         print('Pocket is RED!')
+# elif 11 <= num <=18:
+#     if num % 2 == 0:
+#         print('Pocket is RED!')
+#     else:
+#         print('Pocket is BLACK!')
+# elif 19 <= num <=28:
+#     if num % 2 == 0:
+#         print('Pocket is BLACK!')
+#     else:
+#         print('Pocket is RED!')
+# elif 29 <= num <=36:
+#     if num % 2 == 0:
+#         print('Pocket is RED!')
+#     else:
+#         print('Pocket is BLACK!')
+# else:
+#     print('Please try your input again! ')
 
-print() # End of Roulette Wheel Colors
+# print() # End of Roulette Wheel Colors
 
 # 12 -- Software Sales
+
+numP = int(input('Please enter the number of packages desired: '))
+discount = 0
+
+if numP < 10:
+    print('No discount!')
+elif 10 <= numP <= 19:
+    discount = 0.10
+    print('You get 10% OFF!')
+elif 20 <= numP <= 49:
+    discount = 0.20
+    print('You get 20% OFF!!')
+elif 50 <= numP <= 99:
+    discount = 0.30
+    print('You get 30% OFF!!!')
+elif numP >= 100:
+    discount = 0.40
+    print('You get 40% OFF!!!!')
 
 print() # End of Software Sales
