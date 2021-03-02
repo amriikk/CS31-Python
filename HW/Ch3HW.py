@@ -7,11 +7,9 @@
 
 # 7 -- Color Mixer
 
-print("Enter 2 DISTINCT Primary Colors: ")
-color1 = input("Enter 1st primary color: ").lower()
-color2 = input("Enter 2nd primary color: ").lower()
-# color1 = color1.lower()
-# color2 = color2.lower()
+print("Enter 2 Primary Colors: ")
+color1 = input("\tEnter 1st primary color: ").lower()
+color2 = input("\tEnter 2nd primary color: ").lower()
 
 print()
 
@@ -35,9 +33,14 @@ elif color1 == "blue" and color2 == "yellow":
 else:
     print("Yellow + Blue => Green.")
 
+print('\n')
 
 # 9 -- Roulette Wheel Colors
 
 
 
+print('\n')
+
 # 12 -- Software Sales
+
+print('\n')
