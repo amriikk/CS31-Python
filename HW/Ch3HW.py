@@ -5,7 +5,7 @@
 # Due Date: 03.01.21
 # ####################################################
 
-# 7 -- Color Mixer
+## 7 -- Color Mixer
 
 print("Enter 2 Primary Colors: ")
 color1 = input("\tEnter 1st primary color: ").lower()
@@ -37,7 +37,7 @@ else:
 
 print('\n')
 
-# 9 -- Roulette Wheel Colors
+## 9 -- Roulette Wheel Colors
 
 num = int(input('Enter a pocket number from 0 - 36: '))
 
@@ -70,7 +70,7 @@ else:
 
 print() # End of Roulette Wheel Colors
 
-# 12 -- Software Sales
+## 12 -- Software Sales
 
 numP = int(input('Please enter the number of packages desired: '))
 package = 99.0
