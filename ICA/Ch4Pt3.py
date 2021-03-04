@@ -10,3 +10,5 @@ for x in range(players):
         goals = int(input(f'Enter goals scored in season #{y}: '))
         total += goals 
     print(name, 'has scored', total, "goals in the last", seasons, "seasons.")
+
+#
