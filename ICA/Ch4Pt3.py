@@ -22,3 +22,9 @@ for row in range(BASE_SIZE, 0, -1):
 print()
 
 NUM_STEPS = 6
+
+for row in range(NUM_STEPS, 0, -1):
+    for col in range(row-1):
+        print(' ', end='')
+    print('#')
+print()
