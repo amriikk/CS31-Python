@@ -11,7 +11,6 @@ for x in range(1, howMany+1):
     total += num
 
 print(f'The average is {total/howMany:.3f}')
-
 print()
 
 
