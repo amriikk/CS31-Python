@@ -6,6 +6,7 @@
 # ####################################################
 
 ## 12 -- Calculating the Factorial of a Number
+
 print()
 num = int(input("Enter a Positive Integer: "))
 print()
@@ -25,5 +26,8 @@ print()
 
 ## 13 -- Population
 
+n_organisms = int(input('Starting number of organisms: '))
+daily_p = float(input('Average daily increase (enter as a %): '))
+n_days = int(input('Number of days to multiply: '))
 
 ## 15 -- Loop Pattern
