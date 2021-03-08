@@ -46,3 +46,8 @@ print()
 ## 15 -- Loop Pattern
 
 print()
+for row in range(6):
+    print('#', end='', sep='')
+    for space in range(row):
+        print(' ', end='', sep='')
+    print('#', sep='')
