@@ -12,7 +12,7 @@ print()
 factorial = 1
 
 if num < 0:
-    print('Factorial does not exist for negative numbers. Try again!')
+    print('Factorial not defined for negative numbers. Try again!')
 elif num == 0:
     print(f'The Factorial of {num} is 1')
 else:
