@@ -40,7 +40,7 @@ for x in range(n_organisms, n_days+1):
         day1 = False
     add = n_organisms * daily_p
     n_organisms = n_organisms + add
-    print(f'{x}', '\t\t', n_organisms)
+    print(f'{x}', '\t\t', '{0:.6f}'.format(n_organisms))
 print()
 
 ## 15 -- Loop Pattern
