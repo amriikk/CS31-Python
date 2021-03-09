@@ -46,7 +46,8 @@ print()
 ## 15 -- Loop Pattern
 
 print()
-for row in range(6):
+BASE_SIZE = 6
+for row in range(BASE_SIZE):
     print('#', end='', sep='')
     for space in range(row):
         print(' ', end='', sep='')
