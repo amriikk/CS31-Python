@@ -10,7 +10,7 @@ def main():
             knights()
         else:
             yotes()
-        input('Press Enter to continue')
+        input('Press Enter to continue.. ')
         team = int(input('Type 1 for Kings, 2 for Ducks, 3 for Knights, 4 for Coyotes or anything else to quit: '))
     print('That\'s all!')
 
