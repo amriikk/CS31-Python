@@ -93,7 +93,6 @@ elif numP >= 100:
 else:
     print('Please enter a valid number of packages')
 
-
 print(f'You purchased {numP} packages and received a {discount*100:.0f}% discount! ')
 
 subtotal = numP * package
