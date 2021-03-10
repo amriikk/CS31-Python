@@ -5,7 +5,6 @@
 # Due Date: 02.21.21
 # ####################################################
 
-
 # 12. Stock Transaction Program
 
 num_Shares = 2000 # num of stocks purchased
