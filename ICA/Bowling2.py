@@ -40,3 +40,5 @@ elif num == 6:
     print("Saturday")
 elif num == 7:
     print("Sunday")
+else:
+    print('Enter valid response')
