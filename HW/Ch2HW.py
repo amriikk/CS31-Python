@@ -30,9 +30,7 @@ print(f'Net profit for sold stock (after commissions): ${net_Profit:,.2f}')
 if net_Profit > 0:
     print(f"Joe made a Net Profit of ${net_Profit:,.2f} :D")
 else: 
-    print("Joe made NO MONEY$ :(")
-
-print()
+    print("Joe made NO MONEY$ :(\n")
 
 
 # 13. Planting Grapevines
