@@ -7,8 +7,8 @@ CAL_CARB =4
 def main():
     kms = float(input('Enter kilometers: '))
     getMiles(kms)
-    print()
-    fatGrams = int(input('Enter fat grams consumed today: '))
+    
+    fatGrams = int(input('\nEnter fat grams consumed today: '))
     carbGrams = int(input('Enter carbohydrate grams consumed today: '))
     getCalories(fatGrams, carbGrams)
 
