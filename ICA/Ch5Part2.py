@@ -20,5 +20,4 @@ def getCalories(fat, carb, fconv, cconv):
     print('Consuming', carb, 'carb grams gives you', carb_calories, 'calories from carbs.')
     print('Total calories from fat and carbs today is', total_cals)
 
-
 main()
