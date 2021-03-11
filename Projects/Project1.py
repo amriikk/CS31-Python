@@ -13,3 +13,5 @@ meal = int(input('meal'))
 side = int(input('side'))
 drink = int(input('drink'))
 size = int(input('size'))
+
+print('Here is your order: \n')
