@@ -6,15 +6,15 @@ def main():
     print()
     fatGrams = int(input('Enter fat grams consumed today: '))
     carbGrams = int(input('Enter carbohydrate grams consumed today: '))
-    getCalories(fatGrams, carbGrams)
+    getCalories(fatGrams, carbGrams, fconv=9, cconv=4)
 
 def getMiles(k, convert):
     miles = k * convert
     print(f'{k:.1f} kilometers = {miles:.1f} miles.')
 
-def getCalories(fat, carb):
-    fat_calories = fat * 9
-    carb_calories = carb * 4
+def getCalories(fat, carb, fconv, cconv):
+    fat_calories = fat * fconv
+    carb_calories = carb * cconv
     total_cals = fat_calories + carb_calories
     print('\nConsuming', fat, 'fat grams gives you', fat_calories, 'calories from fat.')
     print('Consuming', carb, 'carb grams gives you', carb_calories, 'calories from carbs.')
