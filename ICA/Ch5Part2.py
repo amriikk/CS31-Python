@@ -1,8 +1,12 @@
 # Week 5 - ICA 2
 
+CONVERT_KM_TO_MI = 0.6214
+CAL_FAT = 9
+CAL_CARB =4
+
 def main():
     kms = float(input('Enter kilometers: '))
-    getMiles(kms, convert=0.6214)
+    getMiles(kms)
     print()
     fatGrams = int(input('Enter fat grams consumed today: '))
     carbGrams = int(input('Enter carbohydrate grams consumed today: '))
@@ -12,7 +16,7 @@ def getMiles(k, convert):
     miles = k * convert
     print(f'{k:.1f} kilometers = {miles:.1f} miles.')
 
-def getCalories(fat, carb, fconv, cconv):
+def getCalories(fat, carb):
     fat_calories = fat * fconv
     carb_calories = carb * cconv
     total_cals = fat_calories + carb_calories
