@@ -8,3 +8,8 @@
 ## Binary Burgers ##
 
 print('\n*** *** *** *** Binary Burger Program *** *** *** ***\n')
+
+meal = int(input('meal'))
+side = int(input('side'))
+drink = int(input('drink'))
+size = int(input('size'))
