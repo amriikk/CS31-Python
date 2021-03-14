@@ -27,20 +27,19 @@ h2o = 0.00              # option [4]
 subtotal = 0.00
 tax = 0.08
 
-print('\n**** *** *** *** ***** Welcome ***** *** *** *** ****')
-print('\n*** *** *** *** Binary Burger Program *** *** *** ***\n')
+print('\n*** *** *** *** *** Welcome *** *** *** *** ***')
+print('\n**** *** *** Binary Burger Program *** *** ****\n')
 
 print("\t\t 5112 E. MLK BLVD")
 print("\t\tLONG BEACH, CA 90806 ")
 print("\t\t    503.323.2342\n")
-print("Server: Kyle             \t\t\t3/10/21")
-print("Guests: 2                \t\t\t10:30AM")
-print()
+print("Server: Kim Davis \t\t\t03/21/21")
+print("Guests: 1\t\t\t\t11:11 AM")
 
-meal = int(input('Enter\t[1] for a Hamburger\n\t[2] for a Cheeseburger\n\t[3] for a Chicken Sandwich,\n\t[4] for no sandwich..\n\nYour Selection: '))
-side = int(input('Enter\t[1] for a French Fries,\n\t[2] for Onion Rings,\n\t[3] for a Side Salad,\n\t[4] for NO side..\n\nYour Selection: '))
-drink = int(input('Enter\t[1] for Coke\n\t[2] for Sprite\n\t[3] for Lemonade\n\t[4] for Water\n\nYour Selection: '))
-size = int(input('Enter\t[1] for Small,\n\t[2] for Medium,\n\t[3] for Large\n\nYour Selection: '))
+meal = int(input('\nEnter\t[1] for a Hamburger\n\t[2] for a Cheeseburger\n\t[3] for a Chicken Sandwich,\n\t[4] for no sandwich..\n\nYour Selection: '))
+side = int(input('\nEnter\t[1] for a French Fries,\n\t[2] for Onion Rings,\n\t[3] for a Side Salad,\n\t[4] for NO side..\n\nYour Selection: '))
+drink = int(input('\nEnter\t[1] for Coke\n\t[2] for Sprite\n\t[3] for Lemonade\n\t[4] for Water\n\nYour Selection: '))
+size = int(input('\nEnter\t[1] for Small,\n\t[2] for Medium,\n\t[3] for Large\n\nYour Selection: '))
 
 print('\nHere is your order: \n')
 
