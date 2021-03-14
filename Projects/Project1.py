@@ -26,14 +26,17 @@ h2o = 0.00              # option [4]
 print('\n*** *** *** *** Binary Burger Program *** *** *** ***\n')
 
 meal = int(input('Enter\t[1] for a Hamburger\n\t[2] for a Cheeseburger\n\t[3] for a Chicken Sandwich,\n\t[4] for no sandwich..\n\nYour Selection: '))
-side = int(input('Enter\t[1] for a French Fries,\n\t[2] for Onion Rings,\n\t[3] for a Side Salad,\n\t[4] for NO side..\n\nYour Selection: '))
-drink = int(input('Enter\t[1] for Coke\n\t[2] for Sprite\n\t[3] for Lemonade\n\t[4] for Water\n\nYour Selection: '))
-size = int(input('Enter\t[1] for Small,\n\t[2] for Medium,\n\t[3] for Large\n\nYour Selection: '))
+# side = int(input('Enter\t[1] for a French Fries,\n\t[2] for Onion Rings,\n\t[3] for a Side Salad,\n\t[4] for NO side..\n\nYour Selection: '))
+# drink = int(input('Enter\t[1] for Coke\n\t[2] for Sprite\n\t[3] for Lemonade\n\t[4] for Water\n\nYour Selection: '))
+# size = int(input('Enter\t[1] for Small,\n\t[2] for Medium,\n\t[3] for Large\n\nYour Selection: '))
+
+print('Here is your order: \n')
 
 if meal < 1 or meal > 4:
     meal = 4
 elif meal == 1:
+    print(f'Hamburger\t${hamburger:.2f}')
+elif
 
 
 
-print('Here is your order: \n')
