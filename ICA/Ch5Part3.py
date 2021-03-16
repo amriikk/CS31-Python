@@ -9,11 +9,9 @@ total = 0
         amt = plinkToss(slot)
         print(f'Disk #{x}: You won ${amt} (slot = {slot})')
         total = total + amt
+    print(f'CONGRATULATION!! You have won ${total:,d}')
         
         
-        
-        
-
 def plinkToss(slot):
     if slot == 1 or slot == 9:
         money = 100
