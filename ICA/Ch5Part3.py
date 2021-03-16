@@ -27,8 +27,11 @@ def plinkToss(slot):
     elif slot == 5:
         money == 10000
     else: 
-        moneyn = 0
+        money = 0
     return money
 
 def tenGrand(total):
     return total >= 10000
+
+# Call main
+main()
