@@ -2,7 +2,7 @@
 import random
 # Let's play Plinko!!
 def main():
-total = 0
+    total = 0
     for x in range(1,6):
         #random.seed(random.uniform(2.5,125.3))
         slot = random.randrange(1,10)
@@ -31,4 +31,4 @@ def plinkToss(slot):
     return money
 
 def tenGrand(total):
-    return total>=10000
+    return total >= 10000
