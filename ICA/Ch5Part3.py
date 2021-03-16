@@ -10,6 +10,11 @@ total = 0
         print(f'Disk #{x}: You won ${amt} (slot = {slot})')
         total = total + amt
     print(f'CONGRATULATION!! You have won ${total:,d}')
+
+    if tenGrand(total):
+        print('Over $10,000! Great job!')
+    else: 
+        print('Under $10,000. Try again!')
         
         
 def plinkToss(slot):
@@ -24,3 +29,6 @@ def plinkToss(slot):
     else: 
         moneyn = 0
     return money
+
+def tenGrand(total):
+    return total>=10000
