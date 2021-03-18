@@ -75,6 +75,7 @@ elif side == 3:
     side_price = salad
     print(f'Side Salad\t\t${salad:.2f}')
 else:
+    side_price = 0.00
     print(f'No side order selected!')
 
 ## Drink Order
