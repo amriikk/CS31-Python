@@ -25,7 +25,7 @@ h2o = 0.00              # option [4]
 
 # Total + Tax variables:
 subtotal = 0.00
-tax = 0.08
+TAX = 0.08
 
 print('\n*** *** *** *** *** Welcome *** *** *** *** ***')
 print('\n**** *** *** Binary Burger Program *** *** ****\n')
@@ -144,5 +144,6 @@ else: # Water Selected
 
 print('-----------------------------')
 subtotal = meal_price + side_price + drink_price
-total = subtotal + (subtotal * tax)
+tax = subtotal * TAX
+total = subtotal + tax
 print(f'Subtotal:\t\t${subtotal:.2f} \nTax:\t\t\t${tax}\nTotal:\t\t\t${total:.2f}')
