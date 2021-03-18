@@ -146,4 +146,4 @@ print('-----------------------------')
 subtotal = meal_price + side_price + drink_price
 tax = subtotal * TAX
 total = subtotal + tax
-print(f'Subtotal:\t\t${subtotal:.2f} \nTax:\t\t\t${tax}\nTotal:\t\t\t${total:.2f}')
+print(f'Subtotal:\t\t${subtotal:.2f} \nTax:\t\t\t${tax}\nTotal:\t\t\t${total:.2f}\n')
