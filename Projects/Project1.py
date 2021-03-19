@@ -43,7 +43,6 @@ size = int(input('\nEnter\t[1] for Small,\n\t[2] for Medium,\n\t[3] for Large\n\
 
 print('\nHere is your order: \n')
 
-
 ## Meal
 if meal < 1 or meal > 4:
     meal = 4
@@ -83,7 +82,7 @@ if drink < 1 or drink > 4:
     drink = 'Water'
     drink_size = 'Medium'
     drink_price = h2o
-    print(f'{drink_size} {drink}\t{drink_price}')
+    print(f'{drink_size} {drink}\t\t{drink_price:.2f}')
 elif drink == 1: # Coke Selected
     drink = 'Coke'
     if size == 1:
