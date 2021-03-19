@@ -83,7 +83,6 @@ if drink < 1 or drink > 4:
     drink = 'Water'
     drink_size = 'Medium'
     drink_price = h2o
-
     print(f'{drink_size} {drink}\t{drink_price}')
 elif drink == 1: # Coke Selected
     drink = 'Coke'
