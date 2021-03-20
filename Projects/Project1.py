@@ -64,6 +64,7 @@ else:
 ## Side Order
 if side < 1 or side > 4:
     side = 4
+    side_price = 0.00    
 elif side == 1:
     side_price = fries
     print(f'French Fries\t\t${fries:.2f}')
