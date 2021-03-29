@@ -39,21 +39,21 @@ def is_Prime(n) :
  
     return True
 
-
 ## Solution 17
 primeNumbers()
 
 
+## 18 - Prime Number List
 
-# ## 18 - Prime Number List
+print('Prime Number List (0-100)')
+def primeList():
+    for n in range(1,100):
+        if is_Prime(n):
+            print(n)
+            
 
-
-
-
-
-
-
-
+## Solution 18
+primeList()
 
 
 ## Problem 19 - Future Value
