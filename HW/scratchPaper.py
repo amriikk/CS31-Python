@@ -30,6 +30,9 @@ def gamePlay():
         win += 1
     elif tallyCount == 3:
         loss += 1
+
+    ## Ask user to play again!
+    replay()
     
 
 # User Selection method
@@ -107,13 +110,13 @@ def checkWins(userMove, cpuMove):
 def replay():
     re = int(input('''Play Again? 
                 [1] Continue.. 
-                [2] Quit'''))
+                [2] Quit\n'''))
     if re == 1:
         print('Ready, Set, PLAY!\n')
         gamePlay()
     else:
         print('Thanks for playing!\n')
+        sys.exit()
 
 ## Solution 21
 gamePlay()
-replay()
