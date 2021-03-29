@@ -7,50 +7,47 @@
 
 
 
-## Problem 17 - Prime Numbers
+# ## Problem 17 - Prime Numbers
 
-def main():
-    print('\nIs Prime Number Program::\n')
+# def main():
+#     print('\nIs Prime Number Program::\n')
 
-    num = int(input('Enter a Real Number: '))
+#     num = int(input('Enter a Real Number: '))
     
-    result = is_Prime(num)
+#     result = is_Prime(num)
 
-    if result: 
-        print(f'{num} is Prime\n')
-    else:
-        print(f'{num} is NOT Prime\n')
+#     if result: 
+#         print(f'{num} is Prime\n')
+#     else:
+#         print(f'{num} is NOT Prime\n')
 
-def is_Prime(n) :
+# def is_Prime(n) :
  
-    # Base Cases
-    if (n <= 1) :
-        return False
-    if (n <= 3) :
-        return True
+#     # Base Cases
+#     if (n <= 1) :
+#         return False
+#     if (n <= 3) :
+#         return True
  
-    # Skip middle five numbers in below loop
-    if (n % 2 == 0 or n % 3 == 0) :
-        return False
+#     # Skip middle five numbers in below loop
+#     if (n % 2 == 0 or n % 3 == 0) :
+#         return False
  
-    i = 5
-    while(i * i <= n) :
-        if (n % i == 0 or n % (i + 2) == 0) :
-            return False
-        i = i + 6
+#     i = 5
+#     while(i * i <= n) :
+#         if (n % i == 0 or n % (i + 2) == 0) :
+#             return False
+#         i = i + 6
  
-    return True
+#     return True
 
 
-## Solution 17
-main()
-
-
-
-## 18 - Prime Number List
+# ## Solution 17
+# main()
 
 
 
+# ## 18 - Prime Number List
 
 
 
@@ -58,24 +55,27 @@ main()
 
 
 
-## Problem 19 - Future Value
 
-def main():
-    P = float(input('Enter Acconut\'s Present Value: '))
-    i = float(input('Enter Monthly Interest Rate (in percent):'))/100
-    t = int(input('Enter # of Months: '))
 
-    F =  futureValue(P, i, t)
 
-    print(f'Future Value of the account ${F:,.2f} after a total of [{t}] Months\n')
+# ## Problem 19 - Future Value
 
-def futureValue(pValue, mInterest, nMonths):
-    fValue = pValue * (1 + mInterest) ** nMonths
+# def main():
+#     P = float(input('Enter Acconut\'s Present Value: '))
+#     i = float(input('Enter Monthly Interest Rate (in percent):'))/100
+#     t = int(input('Enter # of Months: '))
 
-    return fValue
+#     F =  futureValue(P, i, t)
 
-## Solution 19
-main()
+#     print(f'Future Value of the account ${F:,.2f} after a total of [{t}] Months\n')
+
+# def futureValue(pValue, mInterest, nMonths):
+#     fValue = pValue * (1 + mInterest) ** nMonths
+
+#     return fValue
+
+# ## Solution 19
+# main()
 
 
 
@@ -100,9 +100,11 @@ while True:
             [4] - Quit Game\n""")
     uSelection = int(input('\nType your Selection: '))
     
-    if userMove == '4':
+    if userMove == 4:
         print('Thanks for playing')
         sys.exit()   # Quit the Game Loop - exit()
+    else:
+        print('Invalid move! CPU Wins')
 
     # User Selection
     if uSelection == 1:
