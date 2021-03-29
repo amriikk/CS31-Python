@@ -34,7 +34,7 @@ def gamePlay():
             loss = loss + 1
 
     ## Ask user to play again!
-    replay()
+    rePlay()
     
 
 # User Selection method
@@ -57,7 +57,7 @@ def userSelection(uSelection):
         sys.exit()
     else:
         print('\tInvalid Selection! CPU Wins\n')
-        replay()
+        rePlay()
     
 
 # Random CPU Selection
