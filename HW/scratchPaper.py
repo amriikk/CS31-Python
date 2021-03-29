@@ -24,20 +24,13 @@ def gamePlay():
     cpuMove = randomCPU()
     tallyCount = checkWins(userMove, cpuMove)
 
-    if tally == 1:
+    if tallyCount == 1:
         tie += 1
-    elif tally == 2:
+    elif tallyCount == 2:
         win += 1
-    elif tally == 3:
+    elif tallyCount == 3:
         loss += 1
     
-    
-    # replay = input('\nPlay Again (y/n)?: ').lower
-    # if replay == 'y':
-    #     print('Replay!\n')
-    #     gamePlay()
-    # else:
-    #     print('Thanks for playing!\n')
 
 # User Selection method
 def userSelection(uSelection):    
@@ -111,5 +104,14 @@ def checkWins(userMove, cpuMove):
         print("You Lose!")
         return loss
 
+def replay():
+    re = input('Play Again? (y/n): ').lower
+    if re = 'y':
+        print('Ready, Set, PLAY!\n')
+        gamePlay()
+    else:
+        print('Thanks for playing!\n')
+
 ## Solution 21
 gamePlay()
+replay()
