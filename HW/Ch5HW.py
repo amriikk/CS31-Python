@@ -5,12 +5,10 @@
 # Due Date: 03.29.21
 # ####################################################
 
-
-
 ## Problem 17 - Prime Numbers
 
 def primeNumbers():
-    print('\nIs Prime Number Program::\n')
+    print('\n:: Prime Numbers ::\n')
 
     num = int(input('Enter a Real Integer: '))
     
