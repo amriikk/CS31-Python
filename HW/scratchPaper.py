@@ -5,31 +5,33 @@ import random, sys
 print("\n:: Rock + Paper + Scissors ::\n")
 
 def gamePlay():
+    play = True
+
     # Initialize Win, Loss & Tie Variables.
     win = 0
     loss = 0
     tie = 0
 
-    # Loop GamePlays.
-    # while True:
-    print(f'Win: {win} | Losses: {loss} | Ties: {tie}')
-    print("""\nEnter Your Move:\n
-        [1] - Rock 
-        [2] - Paper 
-        [3] - Scissors 
-        [4] - Quit Game\n""")
-    uSelection = int(input('\nType your Selection: '))
+    while play:
 
-    userMove = userSelection(uSelection)
-    cpuMove = randomCPU()
-    tallyCount = checkWins(userMove, cpuMove)
+        print(f'Win: {win} | Losses: {loss} | Ties: {tie}')
+        print("""\nEnter Your Move:\n
+            [1] - Rock 
+            [2] - Paper 
+            [3] - Scissors 
+            [4] - Quit Game\n""")
+        uSelection = int(input('\nType your Selection: '))
 
-    if tallyCount == 1:
-        tie += 1
-    elif tallyCount == 2:
-        win += 1
-    elif tallyCount == 3:
-        loss += 1
+        userMove = userSelection(uSelection)
+        cpuMove = randomCPU()
+        tallyCount = checkWins(userMove, cpuMove)
+
+        if tallyCount == 1:
+            tie = tie + 1
+        elif tallyCount == 2:
+            win = win + 1
+        elif tallyCount == 3:
+            loss = loss + 1
 
     ## Ask user to play again!
     replay()
@@ -55,7 +57,7 @@ def userSelection(uSelection):
         sys.exit()
     else:
         print('\tInvalid Selection! CPU Wins\n')
-        sys.exit()
+        replay()
     
 
 # Random CPU Selection
@@ -108,15 +110,20 @@ def checkWins(userMove, cpuMove):
         return loss
 
 def replay():
-    re = int(input('''Play Again? 
-                [1] Continue.. 
-                [2] Quit\n'''))
-    if re == 1:
+    re = input('''Play Again? 
+                [Y] Continue.. 
+                [N] Quit\n''')
+    re = re.lower
+
+    if re == 'y':
         print('Ready, Set, PLAY!\n')
         gamePlay()
-    else:
+    elif re == 'n':
         print('Thanks for playing!\n')
         sys.exit()
+    else:
+        print('Invalid!')
+        replay()
 
 ## Solution 21
 gamePlay()
