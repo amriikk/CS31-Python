@@ -1,5 +1,5 @@
 
-## Problem 19 
+## Problem 19 - Future Value
 
 def main():
     P = float(input('Enter Acconut\'s Present Value: '))
@@ -17,20 +17,4 @@ def futureValue(pValue, mInterest, nMonths):
 
 ## Solution 19
 main()
-
-
-
-
-# ## 19 
-
-# P = float(input('Enter Acconut\'s Present Value: '))
-# i = int(input('Enter Monthly Interest Rate: '))
-# t = int(input('Enter # of Months: '))
-
-# F = 
-
-# def futureValue(pValue, mInterest, nMonths):
-#     fValue = pValue * (1 + mInterest) ** nMonths
-
-#     return fValue
 
