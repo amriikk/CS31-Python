@@ -7,43 +7,43 @@
 
 
 
-# ## Problem 17 - Prime Numbers
+## Problem 17 - Prime Numbers
 
-# def main():
-#     print('\nIs Prime Number Program::\n')
+def primeNumbers():
+    print('\nIs Prime Number Program::\n')
 
-#     num = int(input('Enter a Real Number: '))
+    num = int(input('Enter a Real Integer: '))
     
-#     result = is_Prime(num)
+    result = is_Prime(num)
 
-#     if result: 
-#         print(f'{num} is Prime\n')
-#     else:
-#         print(f'{num} is NOT Prime\n')
+    if result: 
+        print(f'{num} is Prime\n')
+    else:
+        print(f'{num} is NOT Prime\n')
 
-# def is_Prime(n) :
+def is_Prime(n) :
  
-#     # Base Cases
-#     if (n <= 1) :
-#         return False
-#     if (n <= 3) :
-#         return True
+    # Base Cases
+    if (n <= 1) :
+        return False
+    if (n <= 3) :
+        return True
  
-#     # Skip middle five numbers in below loop
-#     if (n % 2 == 0 or n % 3 == 0) :
-#         return False
+    # Skip middle five numbers in below loop
+    if (n % 2 == 0 or n % 3 == 0) :
+        return False
  
-#     i = 5
-#     while(i * i <= n) :
-#         if (n % i == 0 or n % (i + 2) == 0) :
-#             return False
-#         i = i + 6
+    i = 5
+    while(i * i <= n) :
+        if (n % i == 0 or n % (i + 2) == 0) :
+            return False
+        i = i + 6
  
-#     return True
+    return True
 
 
-# ## Solution 17
-# main()
+## Solution 17
+primeNumbers()
 
 
 
@@ -191,19 +191,18 @@ def checkWins(userMove, cpuMove):
 
 def rePlay():
     re = input('''Play Again? 
-                [1] Yes 
-                [2] No\n''').lower()
+                [Y] Continue.. 
+                [N] Game Over!\n''').lower()
 
     if re == 'y':
         print('Ready, Set, PLAY!\n')
         gamePlay()
     elif re == 'n':
-        print('Thanks for playing!\n')
+        print('\tGame Over!\n')
         sys.exit()
     else:
-        print('Invalid!')
-        sys.exit()
+        print('\tInvalid!')
+        rePlay()
 
 ## Solution 21
 gamePlay()
-

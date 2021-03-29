@@ -128,7 +128,6 @@ def rePlay():
 gamePlay()
 
 
-
 # def rePlay():
 #     re = int(input('''Play Again? 
 #                 [1] Yes 
@@ -144,5 +143,3 @@ gamePlay()
 #         print('Invalid!')
 #         sys.exit()
 
-## Solution 21
-gamePlay()
