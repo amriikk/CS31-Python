@@ -17,9 +17,9 @@ def main():
     result = is_Prime(num)
 
     if result: 
-        print(f'{num} is Prime')
+        print(f'{num} is Prime\n')
     else:
-        print(f'{num} is NOT Prime')
+        print(f'{num} is NOT Prime\n')
 
 def is_Prime(n) :
  
@@ -83,7 +83,7 @@ main()
 
 import random, sys
 
-print(":: Rock + Paper + Scissors ::\n")
+print("\n:: Rock + Paper + Scissors ::\n")
 
 # Initialize Win, Loss & Tie Variables.
 win = 0
@@ -92,30 +92,42 @@ tie = 0
 
 # Loop GamePlays.
 while True:
-    print(f"Win: {win} | Losses: {loss} | Ties: {tie}")
+    print(f'Win: {win} | Losses: {loss} | Ties: {tie}')
     print("""\nEnter Your Move:\n
-            [R] - Rock 
-            [P] - Paper 
-            [S] - Scissors 
-            [Q] - Quit Game\n""")
-    userMove = input("\nType your Selection: ")
-    userMove = userMove.lower()
-    if userMove == 'q':
-        sys.exit()   #Quit the program.
+            [1] - Rock 
+            [2] - Paper 
+            [3] - Scissors 
+            [4] - Quit Game\n""")
+    uSelection = int(input('\nType your Selection: '))
+    
+    if userMove == '4':
+        print('Thanks for playing')
+        sys.exit()   # Quit the Game Loop - exit()
 
-    # Display what the computer choice: 
-    randomNumber = random.randint(1, 3)
+    # User Selection
+    if uSelection == 1:
+        userMove = 'r'
+        print("Your Selection: Rock")
+    elif uSelection == 2:
+        userMove = 'p'
+        print("Your Selection: Paper")
+    elif uSelection == 3:
+        userMove = 's'
+        print("Your Selection: Scissors")
 
     # Random CPU Selection 
+    randomNumber = random.randint(1, 3)
+
+    # Display what the computer choice: 
     if randomNumber == 1:
         cpuMove = 'r'
-        print("Rock")
+        print("CPU Selection: Rock")
     elif randomNumber == 2:
         cpuMove = 'p'
-        print("Paper")
+        print("CPU Selection: Paper")
     elif randomNumber == 3:
         cpuMove = 's'
-        print("Scissors")
+        print("CPU Selection: Scissors")
 
     # Check Win
     if userMove == cpuMove:
