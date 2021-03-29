@@ -109,21 +109,21 @@ def checkWins(userMove, cpuMove):
         print("You Lose!")
         return loss
 
-def replay():
-    re = input('''Play Again? 
+def rePlay():
+    replay = input('''Play Again? 
                 [Y] Continue.. 
                 [N] Quit\n''')
-    re = re.lower
+    replay = re.lower
 
-    if re == 'y':
+    if replay == 'y':
         print('Ready, Set, PLAY!\n')
         gamePlay()
-    elif re == 'n':
+    elif replay == 'n':
         print('Thanks for playing!\n')
         sys.exit()
     else:
         print('Invalid!')
-        replay()
+        sys.exit()
 
 ## Solution 21
 gamePlay()
