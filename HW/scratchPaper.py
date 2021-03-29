@@ -14,7 +14,7 @@ def gamePlay():
 
     while play:
 
-        print(f'Win: {win} | Losses: {loss} | Ties: {tie}')
+        print(f'\nWin: {win} | Losses: {loss} | Ties: {tie}')
         print("""\nEnter Your Move:\n
             [1] - Rock 
             [2] - Paper 
