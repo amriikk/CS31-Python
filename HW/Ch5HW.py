@@ -100,11 +100,12 @@ while True:
             [4] - Quit Game\n""")
     uSelection = int(input('\nType your Selection: '))
     
-    if userMove == 4:
+    if uSelection == 4:
         print('Thanks for playing')
         sys.exit()   # Quit the Game Loop - exit()
     else:
         print('Invalid move! CPU Wins')
+        sys.exit()
 
     # User Selection
     if uSelection == 1:

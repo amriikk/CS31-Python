@@ -20,8 +20,8 @@ def gamePlay():
             [4] - Quit Game\n""")
         uSelection = int(input('\nType your Selection: '))
 
-        userSelection()
-        randomCPU()
+        userMove = userSelection()
+        cpuMove = randomCPU()
         checkWins()
     
     replay = input('\nPlay Again (y/n)?: ').lower
@@ -36,12 +36,15 @@ def userSelection():
     if uSelection == 1:
         userMove = 'r'
         print("Your Selection:\tRock")
+        return userMove
     elif uSelection == 2:
         userMove = 'p'
         print("Your Selection:\tPaper")
+        return userMove
     elif uSelection == 3:
         userMove = 's'
         print("Your Selection:\tScissors")
+        return userMove
     elif uSelection == 4:
         print('\nThanks for playing!!\n')
         # Quit the Game Loop - exit()
@@ -51,7 +54,6 @@ def userSelection():
         sys.exit()
     
 
-
 # Random CPU Selection
 def randomCPU():
     randomizeNum = random.randint(1, 3)
@@ -60,12 +62,15 @@ def randomCPU():
     if randomizeNum == 1:
         cpuMove = 'r'
         print("CPU Selection:\tRock")
+        return cpuMove
     elif randomizeNum == 2:
         cpuMove = 'p'
         print("CPU Selection:\tPaper")
+        return cpuMove
     elif randomizeNum == 3:
         cpuMove = 's'
         print("CPU Selection:\tScissors")
+        return cpuMove
 
 # Check Win + Game Counters
 def checkWins():
