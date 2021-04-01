@@ -14,16 +14,16 @@
 
 # Question 2:
 
-# x = 'Muldoon'
-# y = 'Mulroney'
-# z = 'Mulcahey'
-# w = 'Muldrow'
+x = 'Muldoon'
+y = 'Mulroney'
+z = 'Mulcahey'
+w = 'Muldrow'
 
-# print(x >= y)
-# print(y < z or x > w)
-# print(x < z and y < x) 
-# print(not(z > w)) 
-# print(not(z >= y) and not(x != w))
+print(x >= y)
+print(y < z or x > w)
+print(x < z and y < x) 
+print(not(z > w)) 
+print(not(z >= y) and not(x != w))
 
 # Question 3:
 
