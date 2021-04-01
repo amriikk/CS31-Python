@@ -35,7 +35,7 @@ print(format(33333.98765,'6.1f'))
 # Question 4:
 
 def main():
-    ch = str(input('Enter G, H, P or S: '))#.upper() #Uppercase input
+    ch = str(input('Enter G, H, P or S: '))#.upper() 
     print(arena(ch))
 
 def arena(cha):
