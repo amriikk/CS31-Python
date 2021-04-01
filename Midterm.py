@@ -2,15 +2,15 @@
 
 # Question 1:
 
-# x = 10.0
-# y = 5
-# z = 8 
+x = 10.0
+y = 5
+z = 8 
 
-# print((x + 4) / (y + 2))
-# print((y + 5) // (z - 2)) 
-# print((y + 3) * (x - 2))  
-# print((z + 9) - (y - 3)) 
-# print((y - 3) ** (z - 5))
+print((x + 4) / (y + 2))
+print((y + 5) // (z - 2)) 
+print((y + 3) * (x - 2))  
+print((z + 9) - (y - 3)) 
+print((y - 3) ** (z - 5))
 
 # Question 2:
 
