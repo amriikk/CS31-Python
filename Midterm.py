@@ -90,13 +90,25 @@ def main():
     print('Of the numbers generated,', big, 'were greater than 50', small, 'were 50 or less.')
 
 def bigsmall(num):
-    if num !(num > 1):
+    big = 0
+    small = 0
+
+    if num > 1:
+        for x in num:
+        while num > 1:
+            y = random.randint(1,200)
+            if y > 50:
+                big = big + 1
+                return big
+            else: 
+                small = small + 1
+                return small
+            print(f'Number {x} = {y}')
+            num = num - 1
+    else:
         print('Must be greater than 1. Try again')
 
-    while num > 1:
-        for x in range(1, num+1):
-            
-
+    return big, small
 
 # Solution 6:
 main()
