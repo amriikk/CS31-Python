@@ -127,19 +127,18 @@ def rePlay():
 ## Solution 21
 gamePlay()
 
+# def rePlay():
+#     re = int(input('''Play Again? 
+#                 [1] Yes 
+#                 [2] No\n'''))
 
-def rePlay():
-    re = int(input('''Play Again? 
-                [1] Yes 
-                [2] No\n'''))
-
-    if re == 1:
-        print('Ready, Set, PLAY!\n')
-        gamePlay()
-    elif re == 2:
-        print('Thanks for playing!\n')
-        sys.exit()
-    else:
-        print('Invalid!')
-        sys.exit()
+#     if re == 1:
+#         print('Ready, Set, PLAY!\n')
+#         gamePlay()
+#     elif re == 2:
+#         print('Thanks for playing!\n')
+#         sys.exit()
+#     else:
+#         print('Invalid!')
+#         sys.exit()
 
