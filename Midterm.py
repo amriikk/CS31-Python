@@ -1,6 +1,6 @@
 ## Midterm Part 2
 
-# Problem 1:
+# Question 1:
 
 # x = 10.0
 # y = 5
@@ -12,7 +12,7 @@
 # print((z + 9) - (y - 3)) 
 # print((y - 3) ** (z - 5))
 
-# Problem 2:
+# Question 2:
 
 # x = 'Muldoon'
 # y = 'Mulroney'
@@ -25,7 +25,7 @@
 # print(not(z > w)) 
 # print(not(z >= y) and not(x != w))
 
-# Problem 3:
+# Question 3:
 
 # print(format(33333.98765,'8,.1f')) 
 # print(format(33333.98765,'9.3f'))
@@ -33,27 +33,27 @@
 # print(format(33333.98765,'9.3f')) 
 # print(format(33333.98765,'6.1f'))
 
-# # Question 4:
+# Question 4:
 
-# def main():
-#     ch = str(input('Enter G, H, P or S: '))#.upper() #Uppercase input
-#     print(arena(ch))
+def main():
+    ch = str(input('Enter G, H, P or S: '))#.upper() #Uppercase input
+    print(arena(ch))
 
-# def arena(cha):
-#     if cha == 'G' or cha == 'g' :
-#         stadium = 'The Gaylord Center is home to the USC Trojans'
-#     elif cha == 'H' or cha == 'h':
-#         stadium = 'The Honda Center is home to the Anaheim Ducks'
-#     elif cha == 'P' or cha == 'p':
-#         stadium = 'Pauley Pavilion is home to the UCLA Bruins'
-#     elif cha == 'S' or cha == 's':
-#         stadium = 'The Staples Center is home to the LA Lakers, Kings, and Clippers'
-#     else:
-#         stadium = 'Invalid character entered'
-#     return stadium
+def arena(cha):
+    if cha == 'G' or cha == 'g' :
+        stadium = 'The Gaylord Center is home to the USC Trojans'
+    elif cha == 'H' or cha == 'h':
+        stadium = 'The Honda Center is home to the Anaheim Ducks'
+    elif cha == 'P' or cha == 'p':
+        stadium = 'Pauley Pavilion is home to the UCLA Bruins'
+    elif cha == 'S' or cha == 's':
+        stadium = 'The Staples Center is home to the LA Lakers, Kings, and Clippers'
+    else:
+        stadium = 'Invalid character entered'
+    return stadium
 
-# # Solution 4:
-# main()
+# Solution 4:
+main()
 
 
 # # Question 5:
@@ -93,20 +93,20 @@ def bigsmall(num):
     big = 0
     small = 0
 
-    if num > 1:
-        for x in num:
-        while num > 1:
+    if num <= 1:
+        print('Must be greater than 1. Try again')
+        howmany = int(input('How many numbers? '))
+        big, small = bigsmall(howmany)
+
+    while num > 1:
+        for x in range(num):
             y = random.randint(1,200)
+            print(f'Number {x+1} = {y}')
             if y > 50:
                 big = big + 1
-                return big
             else: 
                 small = small + 1
-                return small
-            print(f'Number {x} = {y}')
             num = num - 1
-    else:
-        print('Must be greater than 1. Try again')
 
     return big, small
 
