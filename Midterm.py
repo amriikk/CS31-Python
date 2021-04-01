@@ -27,11 +27,11 @@
 
 # Question 3:
 
-# print(format(33333.98765,'8,.1f')) 
-# print(format(33333.98765,'9.3f'))
-# print(format(33333.98765,'11,.4f'))
-# print(format(33333.98765,'9.3f')) 
-# print(format(33333.98765,'6.1f'))
+print(format(33333.98765,'8,.1f')) 
+print(format(33333.98765,'9.3f'))
+print(format(33333.98765,'11,.4f'))
+print(format(33333.98765,'9.3f')) 
+print(format(33333.98765,'6.1f'))
 
 # Question 4:
 
@@ -56,29 +56,30 @@ def arena(cha):
 main()
 
 
-# # Question 5:
+# Question 5:
 
-# def main():
-#     num1 = float(input('Input first number: '))
-#     num2 = float(input('Input second number: '))
-#     getsum(num1, num2)
+def main():
+    num1 = float(input('Input first number: '))
+    num2 = float(input('Input second number: '))
+    getsum(num1, num2)
 
-# def getsum(x, y):
-#     if x > 10 and y < 5:
-#         sum = (3 * x) + (2 * y)
-#         print(f'The sum of {x} + {y} is equal to {sum:.3f}')
-#     elif x >= 15 and y > 7:
-#         sum = (x / 3) + (y ** 2)
-#         print(f'The sum of {x} + {y} is equal to {sum:.2f}')
-#     elif x < 4 and y >= 10:
-#         sum = (x ** 3) + (y / 5)
-#         print(f'The sum of {x} + {y} is equal to {sum:.4f}')
-#     else: 
-#         sum = x + y
-#         print(f'The sum of {x} + {y} is equal to {sum:.1f}')
+def getsum(x, y):
+    if x > 10 and y < 5:
+        sum = (3 * x) + (2 * y)
+        print(f'The sum of {x} + {y} is equal to {sum:.3f}')
+    elif x >= 15 and y > 7:
+        sum = (x / 3) + (y ** 2)
+        print(f'The sum of {x} + {y} is equal to {sum:.2f}')
+    elif x < 4 and y >= 10:
+        sum = (x ** 3) + (y / 5)
+        print(f'The sum of {x} + {y} is equal to {sum:.4f}')
+    else: 
+        sum = x + y
+        print(f'The sum of {x} + {y} is equal to {sum:.1f}')
 
-# #Solution 5:
-# main()
+#Solution 5:
+main()
+
 
 # Question 6:
 
