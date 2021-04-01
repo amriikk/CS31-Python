@@ -16,10 +16,10 @@ def gamePlay():
 
         print(f'\nWin: {win} | Losses: {loss} | Ties: {tie}')
         print("""\nEnter Your Move:\n
-            [1] - Rock 
-            [2] - Paper 
-            [3] - Scissors 
-            [4] - Quit Game\n""")
+            1 - Rock 
+            2 - Paper 
+            3 - Scissors 
+            4 - Quit Game\n""")
         uSelection = int(input('\nType your Selection: '))
 
         userMove = userSelection(uSelection)
@@ -128,18 +128,18 @@ def rePlay():
 gamePlay()
 
 
-# def rePlay():
-#     re = int(input('''Play Again? 
-#                 [1] Yes 
-#                 [2] No\n'''))
+def rePlay():
+    re = int(input('''Play Again? 
+                [1] Yes 
+                [2] No\n'''))
 
-#     if re == 1:
-#         print('Ready, Set, PLAY!\n')
-#         gamePlay()
-#     elif re == 2:
-#         print('Thanks for playing!\n')
-#         sys.exit()
-#     else:
-#         print('Invalid!')
-#         sys.exit()
+    if re == 1:
+        print('Ready, Set, PLAY!\n')
+        gamePlay()
+    elif re == 2:
+        print('Thanks for playing!\n')
+        sys.exit()
+    else:
+        print('Invalid!')
+        sys.exit()
 
