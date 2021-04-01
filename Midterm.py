@@ -21,7 +21,6 @@ w = 'Muldrow'
 
 print(x >= y)
 print(y < z or x > w)
-print(x < z and y < x) 
 print(not(z > w)) 
 print(not(z >= y) and not(x != w))
 
