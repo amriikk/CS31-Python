@@ -5,6 +5,7 @@ outfile.write('Sidney Crosbly'+'\n')
 outfile.write('John Carlson'+'\n')
 outfile.write('Jordan Binnington'+'\n')
 outfile.close()
+
 # Append one more name in the file
 outfile = open('players.txt','a')
 outfile.write('Alex Ovechkin\n')
@@ -15,6 +16,7 @@ outfile.write(str(74)+'\n')
 outfile.write(str(50)+'\n')
 outfile.write(str(8)+'\n')
 outfile.close()
+
 # Create input file object
 infile1 = open('players.txt','r')
 infile2 = open('numbers.txt','r')
