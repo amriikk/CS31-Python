@@ -31,61 +31,47 @@ def getAverage():
     print('Average of the numbers in the file: ', avg)
     infile.close()
 
-## Problems 7 + 8 - Random Number File Writer | Reader
+# Problems 7 + 8 - Random Number File Writer | Reader
 
-# # 7 and 8
-# def main():
-#     l = int(input("Enter the number of lines: "))
-#     rand_numbers(l)
-#     displayData()
-#     golf()
+def main():
+    uIn = int(input("Enter amount of random numbers to generate: "))
+    randNum(uIn)
+    displayData()
+    golf()
 
-# def rand_numbers(a):
-#     outfile = open('randoms.txt', 'w')
-#     for num in range(a):
-#         y = str(random.randint(1, 500))
-#         outfile.write(y + '\n')
+def randNum(a):
+    outfile = open('randoms.txt', 'w')
+    for num in range(a):
+        x = str(random.randint(1, 500))
+        outfile.write(x + '\n')
 
-# def displayData():
-#     file = open('randoms.txt', 'r')
-#     num = file.readline().rstrip('\n')
-#     print(num)
-#     while num != '':
-#         num = file.readline().rstrip('\n')
-#         print(num)
-#     file.close()
+def displayData():
+    file = open('randoms.txt', 'r')
+    num = file.readline().rstrip('\n')
+    print(num)
+    while num != '':
+        num = file.readline().rstrip('\n')
+        print(num)
+    file.close()
 
-# # outfile = open("random.txt", 'w')
-# # rep = int(input("Enter amount of random numbers to generate: "))
-# # for x in range(1,rep+1):
-# #     number = random.randrange(501)
-# #     outfile.write(number+"\n")
-# # outfile.close()
+# Problem 10 - Golf Scores
 
-# ## Problem 10 - Golf Scores
+def golf():
+    outfile = open('golf.txt', 'w')
+    n = int(input('Enter number of players: '))
+    for i in range(n):
+        name = input("Enter player's name: ")
+        score = int(input("Enter player's score: "))
+        outfile.write(name + "\t\t\t")
+        outfile.write(str(score) + "\n")
+    outfile.close()
 
-
-# # 6 & 9
-
-
-
-
-# def golf():
-#     outfile = open('golf.txt', 'w')
-#     a = int(input('Enter the number of players: '))
-#     for b in range(a):
-#         name = input("Enter the player's name: ")
-#         score = int(input("Enter the player's score: "))
-#         outfile.write(name + "\t\t\t\t")
-#         outfile.write(str(score) + "\n")
-#     outfile.close()
-
-#     infile1 = open('golf.txt', 'r')
-#     line = infile1.readline().rstrip('\n')
-#     print('player\t\t\tscore')
-#     print(line)
-#     while line != '':
-#         line = infile1.readline().rstrip('\n')
-#         print(line)
+    infile1 = open('golf.txt', 'r')
+    l = infile1.readline().rstrip('\n')
+    print('\nPlayer\t\t\tScore')
+    print(l)
+    while l != '':
+        l = infile1.readline().rstrip('\n')
+        print(l)
 
 main()
