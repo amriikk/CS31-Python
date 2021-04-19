@@ -5,14 +5,21 @@
 # Due Date: 04.18.21
 # ####################################################
 
+def main():
+    getAverage()
+
 ## Problems 6 + 9 - Average of Numbers | Exception Handling
-def getSum():
+def getAverage():
+    sum = 0
+    count = 0
     infile = open('numbers.txt','r')
     for num in infile:
         num = num.rstrip('\n')
-        # num = infile.readline().rstrip('\n')
-        # team = infile.readline().rstrip('\n')
-        print(num,'wears number')
+        sum += int(num)
+        print(num,'is added. New total:', sum)
+        count += 1
+    avg = sum / count
+    print('Average of the numbers in the file: ', avg)
     infile.close()
 
 ## Problems 7 + 8 - Random Number File Writer | Reader
@@ -24,3 +31,5 @@ def getSum():
 # outfile.close()
 
 ## Problem 10 - Golf Scores
+
+main()
