@@ -25,4 +25,19 @@ def main():
     print('Original Six NHL teams based in Canada: ', OrigSixTeams[:2])
     print('Original Six NHL teams based in USA: ', OrigSixTeams[2:])
 
+    # Part 3
+    NHLExpansion = OrigSixTeams + NextSixtTeams
+    more = 'y'
+    while more == 'y':
+        index = random.randint(0,11)
+        team = NHLExpansion[index]
+        if index <= 5:
+            whichone = 'Original Six'
+            year = OrigSixYears[index]
+        else:
+            whichone = 'Next Six'
+            year = 1967
+        print(team, 'is part of the', whichone, ' formed in', year)
+        more = input('Wanna see another one? (y/n) ')
+        
 main()
