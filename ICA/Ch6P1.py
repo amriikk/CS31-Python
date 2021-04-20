@@ -1,5 +1,4 @@
 # Week 10, ICA 1
-
 outfile = open('players.txt', 'w')
 outfile.write('Sidney Crosbly'+'\n')
 outfile.write('John Carlson'+'\n')
