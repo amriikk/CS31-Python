@@ -28,3 +28,12 @@ subtotal = 0.00
 TAX = 0.08
 
 # while loop
+
+print('\n*** *** *** *** *** Welcome *** *** *** *** ***')
+print('\n**** *** *** Binary Burger Program *** *** ****\n')
+
+print("\t\t 5112 E. MLK BLVD")
+print("\t\tLONG BEACH, CA 90806 ")
+print("\t\t    503.323.2342\n")
+print("Server: Kim Davis \t\t\t03/21/21")
+print("Guests: 1\t\t\t\t11:11 AM")
