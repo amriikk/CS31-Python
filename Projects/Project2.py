@@ -23,6 +23,6 @@ med = 2.25              # option [2]
 lg = 2.75               # option [3]
 h2o = 0.00              # option [4]
 
-# Total + Tax variables:
+# subTotal + Tax:
 subtotal = 0.00
 TAX = 0.08
