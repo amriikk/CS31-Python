@@ -26,3 +26,4 @@ h2o = 0.00              # option [4]
 # subTotal + Tax:
 subtotal = 0.00
 TAX = 0.08
+

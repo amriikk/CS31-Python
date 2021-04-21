@@ -33,7 +33,6 @@ def getAverage():
     infile.close()
 
 # Problems 7 + 8 - Random Number File Writer | Reader
-
 def main():
     uIn = int(input("Enter amount of random numbers to generate: "))
     randNum(uIn)
@@ -56,7 +55,6 @@ def displayData():
     file.close()
 
 # Problem 10 - Golf Scores
-
 def golf():
     outfile = open('golf.txt', 'w')
     n = int(input('Enter number of players: '))
