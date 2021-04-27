@@ -30,6 +30,19 @@ def store_goals(g, filename):
         file.write(str(num)+'\n')
     file.close()
 
-
+def get_data(file1, file2, rows):
+    data = []
+    for x in range(rows):
+        data.append([0,0])
+    goals = open(file1, 'r')
+    assists = open(file2, 'r')
+    index = 
+    while index < rows:
+        data[index][0] = goals.read().rstrip('\n')
+        data[index][1] = assists.read().rstrip('\n')
+        index += 1
+    goals.close()
+    assists.close()
+    return data
 
 main()
