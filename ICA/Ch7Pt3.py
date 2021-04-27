@@ -1,11 +1,11 @@
 # Week 12, ICA 1
 
 def main():
-    marcel = get_goals(dionne.txt)
+    marcel = get_goals('dionne.txt')
     total = get_total(marcel)
     print('Marcel Dionne scored', total, 'goals in', len(marcel), 'NHL seasons.')
 
-def get_goals(filename)
+def get_goals(filename):
     goals = [] # empty array
     file = open(filename, 'r')
     goals = file.readlines() # reads contents of file into list
