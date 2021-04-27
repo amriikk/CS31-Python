@@ -6,6 +6,8 @@ def main():
     print('Marcel Dionne scored', total, 'goals in', len(marcel), 'NHL seasons.')
     bossy1 = [53,69,51,68,64,60,51,58,61,38]
     store_goals(bossy1, 'bossy1.txt')
+    # test data function
+    print(get_data('bossy1.txt','bossy2.txt', 10))
 
 def get_goals(filename):
     goals = [] # empty array
@@ -36,10 +38,10 @@ def get_data(file1, file2, rows):
         data.append([0,0])
     goals = open(file1, 'r')
     assists = open(file2, 'r')
-    index = 
+    index = 0
     while index < rows:
-        data[index][0] = goals.read().rstrip('\n')
-        data[index][1] = assists.read().rstrip('\n')
+        data[index][0] = goals.readline().rstrip('\n')
+        data[index][1] = assists.readline().rstrip('\n')
         index += 1
     goals.close()
     assists.close()
