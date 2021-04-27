@@ -1,13 +1,12 @@
 # Week 12, ICA 1
-
 def main():
     marcel = get_goals('dionne.txt')
     total = get_total(marcel)
     print('Marcel Dionne scored', total, 'goals in', len(marcel), 'NHL seasons.')
     bossy1 = [53,69,51,68,64,60,51,58,61,38]
     store_goals(bossy1, 'bossy1.txt')
-    # test data function
-    print(get_data('bossy1.txt','bossy2.txt', 10))
+    mike = get_data('bossy1.txt','bossy2.txt', 10)
+    display_data('Mike Bossy', mike, len(mike))
 
 def get_goals(filename):
     goals = [] # empty array
@@ -46,5 +45,12 @@ def get_data(file1, file2, rows):
     goals.close()
     assists.close()
     return data
+
+def display_data(name, data, rows):
+    print(f'Career Stats for {name}')
+    print('\tGoals\tAssists')
+    print('\t---------------')
+    for x in range(rows):
+        print(f'\t{data[x][0]}\t{data[x][1]}')
 
 main()
