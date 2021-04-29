@@ -1,5 +1,6 @@
 # Week 12, ICA 2
 import matplotlib.pyplot as plt
+
 def main():
     premier = ('Liverpool','Chelsea','Arsenal','Southampton')
     mls = ('LAFC','LA Galaxy','DC United','Sporting KC')
@@ -45,7 +46,7 @@ def main():
     plt.grid(True)
 
     # Display the line graph
-    # plt.show()
+    plt.show()
 
     plt.figure()
     # Bar Graph - left edges
@@ -71,6 +72,22 @@ def main():
     plt.yticks([0,100,200,300,400,500], ['$0M','$1M','$2M','$3M','$4M','$5M'])
 
     # Show the bar graph
+    # plt.show()
+
+    # Pie chart - sales amounts
+    plt.figure()
+    sales = [100,400,300,600]
+
+    # labels for pie slices
+    slice_labels = ['1st Qtr','2nd Qtr','3rd Qrt', '4th Qtr']
+
+    # create pie chart
+    plt.pie(sales,labels=slice_labels,colors=('r','g','m','b'))
+
+    # create title
+    plt.title('Sales by Quarter')
+
+    # show pie chart
     plt.show()
 
 
