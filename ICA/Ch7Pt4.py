@@ -23,30 +23,20 @@ def main():
     print(soccer_teams2)
 
     # Part 2
-    # Create lists with x, y coordinates
     plt.figure()
+    # Create lists with x, y coordinates
     x_coords = [0,1,2,3,4]
     y_coords = [0,3,1,5,2]
-
-    #Build the line graph
-    plt.plot(x_coords, y_coords, marker='o')
-
-    # Add a Title
-    plt.title('Sales by Year')
-
+    plt.plot(x_coords, y_coords, marker='o') # Build the line graph
+    plt.title('Sales by Year') # Add a Title
     # Add labels to the axis
     plt.xlabel('Year')
     plt.ylabel('Sales')
-
     # Customize the tick markers
     plt.xticks([0,1,2,3,4], ['2016','2017','2018','2019','2020'])
-    plt.yticks([0,1,2,3,4,5], ['$0M','$1M','$2M','$3M','$4M','$5M'])
-
-    # Add a Grid
-    plt.grid(True)
-
-    # Display the line graph
-    plt.show()
+    plt.yticks([0,1,2,3,4,5], ['$0M','$1M','$2M','$3M','$4M','$5M'])    
+    plt.grid(True) # Add a Grid
+    plt.show() # Display the line graph
 
     plt.figure()
     # Bar Graph - left edges
