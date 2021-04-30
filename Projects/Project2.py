@@ -36,10 +36,13 @@ print("\t\t    503.323.2342\n")
 print("Server: Kim Davis \t\t\t03/21/21")
 print("Guests: 1\t\t\t\t11:11 AM")
 
+def main():
+    orders = int(input('\nEnter # of Orders: '))
 
-# while loop
+    for x in orders:
+        print('Order #' + x)
 
-orders = int(input('\nEnter # of Orders: '))
+
 
 
 ## def for getSammich()
@@ -47,3 +50,5 @@ orders = int(input('\nEnter # of Orders: '))
 ## def for getSides()
 
 ## def for getDranks()
+
+main()
