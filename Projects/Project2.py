@@ -40,3 +40,7 @@ print("Guests: 1\t\t\t\t11:11 AM")
 # while loop
 
 orders = int(input('\nEnter # of Orders: '))
+
+
+## def for getSammich()
+
