@@ -38,17 +38,38 @@ print("Guests: 1\t\t\t\t11:11 AM")
 
 def main():
     orders = int(input('\nEnter # of Orders: '))
+    receipt = 0
 
-    for x in orders:
-        print('Order #' + x)
+    while orders > 0:
+        receipt += 1
+        print(f'Enter Order #{receipt}')
 
 
 
+        orders += -1
+    
 
-## def for getSammich()
+## def for getEntree()
+def getEntree():
+    meal = int(input('\nEnter\t[1] for a Hamburger\n\t[2] for a Cheeseburger\n\t[3] for a Chicken Sandwich,\n\t[4] for no sandwich..\n\nYour Selection: '))
+    ## Meal
+    if meal == 1:
+        meal_price = hamburger
+        print(f'Hamburger\t\t${hamburger:.2f}')
+    elif meal == 2:
+        meal_price = cheeseburger
+        print(f'Cheeseburger\t\t${cheeseburger:.2f}')
+    elif meal == 3:
+        meal_price = sandwich
+        print(f'Chicken Sandwich\t${sandwich:.2f}')
+    elif meal == 4:
+        getEntree()
+    else:
+        getEntree()
+        print('Invalid Entry')
 
-## def for getSides()
+## def for getSide()
 
-## def for getDranks()
+## def for getDrank()
 
 main()
