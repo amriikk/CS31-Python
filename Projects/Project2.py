@@ -42,10 +42,10 @@ def main():
 
     while orders > 0:
         receipt += 1
-        print(f'Enter Order #{receipt}')
+        print(f'\nOrder Ticket #{receipt}')
 
-        entree = getEntree()
-        print(f'Price of Entree: {entree}')
+        entree, entree_price = getEntree()
+        print(f'Entree: {entree}\t\tPrice: ${entree_price:.2f}')
 
         orders += -1
     
@@ -55,21 +55,21 @@ def getEntree():
     entree = int(input('\nEnter\t[1] for a Hamburger\n\t[2] for a Cheeseburger\n\t[3] for a Chicken Sandwich,\n\t[4] for no sandwich..\n\nYour Selection: '))
     
     if entree == 1:
+        sammich = 'Hamburger'
         entree_price = hamburger
-        print(f'Hamburger\t\t${hamburger:.2f}')
-        return entree_price
+        return sammich, entree_price
     elif entree == 2:
+        sammich = 'Cheeseburger'
         entree_price = cheeseburger
-        print(f'Cheeseburger\t\t${cheeseburger:.2f}')
-        return entree_price
+        return sammich, entree_price
     elif entree == 3:
+        sammich = 'Chkn-Sandwich'
         entree_price = sandwich
-        print(f'Chicken Sandwich\t${sandwich:.2f}')
-        return entree_price
+        return sammich, entree_price
     elif entree == 4:
+        sammich = 'no sammich'
         entree_price = 0
-        print('No Entree')
-        return entree_price
+        return sammich, entree_price
     else:
         print('Invalid Entry')
         getEntree()
