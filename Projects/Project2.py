@@ -27,31 +27,32 @@ h2o = 0.00              # option [4]
 subtotal = 0.00
 TAX = 0.08
 
-print('\n*** *** *** *** *** Welcome *** *** *** *** ***')
-print('\n**** *** *** Binary Burger Program *** *** ****\n')
-
-print("\t\t 5112 E. MLK BLVD")
-print("\t\tLONG BEACH, CA 90806 ")
-print("\t\t    503.323.2342\n")
-print("Server: Kim Davis \t\t\t03/21/21")
-print("Guests: 1\t\t\t\t11:11 AM")
-
 def main():
     orders = int(input('\nEnter # of Orders: '))
-    receipt = 0
+    printHeader(orders)
 
+    receipt = 0
     while orders > 0:
         receipt += 1
-        print(f'\nOrder Ticket #{receipt}')
-
+        print(f'\n**** *** ** Processing Order Ticket #{receipt} ** *** ****')
         entree, e_price = getEntree()
         side, s_price = getSide()
 
-        print(f'\n{entree}\t\tPrice: ${e_price:.2f}')
-        print(f'{side}\t\tPrice: ${s_price:.2f}')
+        print(f'\n--------------- Total for Order #{receipt} ---------------')
+        print(f'\n{entree}\t\t\t${e_price:.2f}')
+        print(f'{side}\t\t\t${s_price:.2f}')
 
         orders += -1
     
+def printHeader(num):
+    print('\n*** *** *** *** *** Welcome *** *** *** *** ***')
+    print('\n**** *** *** Binary Burger Program *** *** ****\n')
+
+    print("\t\t 5112 E. MLK BLVD")
+    print("\t\tLONG BEACH, CA 90806 ")
+    print("\t\t    503.323.2342\n")
+    print("Server: Kim Davis \t\t\t03/21/21")
+    print(f"Guests: {num}\t\t\t\t11:11 AM")
 
 ## Entree function: getEntree()
 def getEntree():
