@@ -45,39 +45,53 @@ def main():
         print(f'\nOrder Ticket #{receipt}')
 
         entree, entree_price = getEntree()
-        print(f'Entree: {entree}\t\tPrice: ${entree_price:.2f}')
+
+        print(f'\nEntree: {entree}\t\tPrice: ${entree_price:.2f}')
 
         orders += -1
     
 
-## def for getEntree()
+## Entree function: getEntree()
 def getEntree():
     entree = int(input('\nEnter\t[1] for a Hamburger\n\t[2] for a Cheeseburger\n\t[3] for a Chicken Sandwich,\n\t[4] for no sandwich..\n\nYour Selection: '))
-    
+    entree_price = 0
+
     if entree == 1:
         sammich = 'Hamburger'
         entree_price = hamburger
-        return sammich, entree_price
     elif entree == 2:
         sammich = 'Cheeseburger'
         entree_price = cheeseburger
-        return sammich, entree_price
     elif entree == 3:
         sammich = 'Chkn-Sandwich'
         entree_price = sandwich
-        return sammich, entree_price
     elif entree == 4:
-        sammich = 'no sammich'
-        entree_price = 0
-        return sammich, entree_price
+        sammich = 'No Sammich'
     else:
-        print('Invalid Entry')
+        print('Invalid, try again!')
         getEntree()
+        
+    return sammich, entree_price
 
-    
+## Side-Order function: getSide()
+def getSide():
+    if side < 1 or side > 4:
+        side = 4
+        side_price = 0.00    
+    elif side == 1:
+        side_price = fries
+        print(f'French Fries\t\t${fries:.2f}')
+    elif side == 2:
+        side_price = rings
+        print(f'Onion Rings\t\t${rings:.2f}')
+    elif side == 3:
+        side_price = salad
+        print(f'Side Salad\t\t${salad:.2f}')
+    else:
+        side_price = 0.00
+        # print(f'No side order selected!')   
 
-## def for getSide()
+## Drink function: getDrank()
 
-## def for getDrank()
 
 main()
