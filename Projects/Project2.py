@@ -151,9 +151,13 @@ def getDrank():
             drink_size = 'Medium'
             drink_price = 2.25
         print(f'{drink_size} {drink}\t\t${drink_price:.2f}')
-    else: # Water Selected
+    elif drink == 4: # Lemonade Selected
         drink = 'Water'
-        drink_price = h2o
+            drink_size
         print(f'{drink_size} {drink}\t\t${drink_price:.2f}')
+    else: # Water Selected
+        getDrank()
+
+    return drink_size, drink_price
 
 main()
