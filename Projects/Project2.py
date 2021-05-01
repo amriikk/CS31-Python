@@ -37,10 +37,12 @@ def main():
         print(f'\n**** *** ** Processing Order Ticket #{receipt} ** *** ****')
         entree, e_price = getEntree()
         side, s_price = getSide()
+        drank, d_price = getDrank()
 
-        print(f'\n--------------- Total for Order #{receipt} ---------------')
-        print(f'\n{entree}\t\t\t${e_price:.2f}')
-        print(f'{side}\t\t\t${s_price:.2f}')
+        print(f'\n--------------- Total for Order #{receipt} ---------------\n')
+        print(f'{entree}\t\t\t\t${e_price:.2f}')
+        print(f'{side}\t\t\t\t${s_price:.2f}')
+        print(f'{drank}\t\t\t\t${d_price:.2f}')
 
         orders += -1
     
@@ -78,7 +80,7 @@ def getEntree():
 
 ## Side-Order function: getSide()
 def getSide():
-    side = int(input('\nEnter\t[1] for a French Fries,\n\t[2] for Onion Rings,\n\t[3] for a Side Salad,\n\t[4] for NO side..\n\nYour Selection: '))
+    side = int(input('\nEnter\t[1] for a French Fries,\n\t[2] for Onion Rings,\n\t[3] for a Side Salad,\n\t[4] for No Side..\n\nYour Selection: '))
     side_price = 0.00
 
     if side == 1:
@@ -99,6 +101,6 @@ def getSide():
     return side, side_price
 
 ## Drink function: getDrank()
-
+# def getDrank():
 
 main()
