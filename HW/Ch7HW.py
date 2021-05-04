@@ -8,7 +8,7 @@
 ## Problems 11 - Lo Shu Magic Square
 def main():
     matrix = [[4, 9, 2], [3, 5, 7], [8, 1, 6]]
-    loShu(matrix)
+    print(loShu(matrix))
 
 
 def loShu(matrix):
