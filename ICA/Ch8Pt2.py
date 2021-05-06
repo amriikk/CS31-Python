@@ -1,6 +1,6 @@
 # Week 13, ICA 2
-
 def main():
+    # Part 1
     infile = open('text.txt', 'r')
     data = infile.read()
     low = 0
@@ -16,10 +16,12 @@ def main():
             digit += 1
         elif ch.isspace():
             space += 1
-    print('The data contains',low, 'lowercase letters,', up, 'uppercase letters,',digit, 'digits and', space, 'whitespace characters.')
+    print('The data contains', low, 'lowercase letters,', up, 'uppercase letters,', digit, 'digits', space,
+          'whitespace Characters.')
     infile.close()
+    print()
     # Part 2
-    infile = open('OneWordMovieTitles.txt','r')
+    infile = open('OneWordMovieTitles.txt', 'r')
     movies = infile.read()
     print(movies.upper())
     print(movies.lower())
@@ -28,20 +30,20 @@ def main():
     else:
         print('Deliverance does not come first in the movies string')
     if movies.endswith('site'):
-        print('Parasite comes last in the movies string')
-    else:
-        print('Parasite does not come last in the movies string')
+        print('Parasite does not come first in the movies string')
     jaws = movies.find('Jaws')
     if jaws != -1:
-        print('Jaws is at the index', jaws, 'in the movies string' )
+        print('Jaws is at index', jaws, 'in the movies string')
     else:
-        print('Jaws is not in the movies string ')
+        print('Jaws is not in the movies string')
     movies = movies.replace('Babe', 'Aladdin')
     print(movies)
     infile.close()
+    print()
     # Part 3
-    fullname = input('Enter your first, middle and last name, seperated by spaces: ')
+    fullname = input('Enter your first, middle, and last name, separated by blanks spaces: ')
     name = fullname.split()
-    print('Here are your initials: ', name[0][0].upper(), '. ', name[1][0].upper(), '. ', name[2][0].upper())
+    print('Here are your initials: ', name[0][0].upper(), '.', name[1][0].upper(), '.', name[2][0].upper(), '.', sep='')
 
+# Don't forget to call main
 main()
