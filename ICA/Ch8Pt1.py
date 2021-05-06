@@ -12,6 +12,7 @@ def main():
         sum = 0
         again = input('Care to try again? (y/n) ')
     # Part 1
+    print()
     again = 'y'
     while again == 'y' or y == 'Y':
         title = input('Enter the movie title: ')
@@ -24,4 +25,6 @@ def main():
         year = input('Enter the 4-digit year movie was released: ')
         codept2 = year[2:]
         print('Code for', title, 'is', codept1 + codept2)
+        again = input('Care to try again? (y/n) ')
+        
 main()
