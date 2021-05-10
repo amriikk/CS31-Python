@@ -38,11 +38,13 @@ def main():
         entree, e_price = getEntree()
         side, s_price = getSide()
         drank = getDrank()
-        if drank == 4:
+        if drank == 'Water Cup':
             size = ""
             d_price = h2o
         else:
             size, d_price = getSize()
+
+
 
         if receipt == 1:
             file = open('receipt.txt', 'w')
@@ -52,6 +54,11 @@ def main():
         file.write(f'{entree:<30}${e_price:<.2f}\n')
         file.write(f'{side:<30}${s_price:<.2f}\n')
         file.write(f'{(size + drank):<30}${d_price:<.2f}\n')
+        file.write('----------------------------------------------')
+        subtotal = e_price + s_price + d_price
+        tax = subtotal * TAX
+        total = subtotal + tax
+        file.write(f'\nSubtotal:\t\t\t\t\t${subtotal:.2f} \nTax:\t\t\t\t\t\t${tax:.2f}\nTotal:\t\t\t\t\t\t${total:.2f}\n')
 
         orders += -1
 
@@ -145,7 +152,6 @@ def getSize():
 
     return drink_size, drink_price
 
-# def getSubtotal():
 
 
 main()
