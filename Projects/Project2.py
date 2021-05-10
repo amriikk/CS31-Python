@@ -2,7 +2,7 @@
 # CS 31, Prof. Muldrow
 # Name: Jhon Trujillo
 # Assignment: Project 2
-# Due Date: 05.  .21
+# Due Date: 05.09.21
 # ####################################################
 
 ## Binary Burgers ##
@@ -38,23 +38,25 @@ def main():
         entree, e_price = getEntree()
         side, s_price = getSide()
         drank = getDrank()
-        size, d_price = getSize()
+        if drank == 4:
+            size = ""
+            d_price = h2o
+        else:
+            size, d_price = getSize()
 
         if receipt == 1:
             file = open('receipt.txt', 'w')
         else:
             file = open('receipt.txt', 'a')
         file.write(f'\n--------------- Total for Order #{receipt} ---------------\n')
-        file.write(f'{entree:<25}${e_price:<.2f}\n')
-        file.write(f'{side:<25}${s_price:<.2f}\n')
-        file.write(f'{(size + drank):<25}${d_price:<.2f}\n')
+        file.write(f'{entree:<30}${e_price:<.2f}\n')
+        file.write(f'{side:<30}${s_price:<.2f}\n')
+        file.write(f'{(size + drank):<30}${d_price:<.2f}\n')
 
         orders += -1
 
     file.close()
 
-
-    
 def printHeader(num):
     print('\n*** *** *** *** *** Welcome *** *** *** *** ***')
     print('\n**** *** *** Binary Burger Program *** *** ****\n')
@@ -126,8 +128,9 @@ def getDrank():
 
     return drank
 
+## Size function: getSize()
 def getSize():
-    size = int(input('\nEnter\t[1] for Small\n\t[2] for Medium\n\t[3] for Large\n\n'))
+    size = int(input('\nEnter\t[1] for Small\n\t[2] for Medium\n\t[3] for Large\n\nYour Selection: '))
     if size == 1:
         drink_size = 'Small '
         drink_price = 1.50
@@ -141,6 +144,9 @@ def getSize():
         getSize()
 
     return drink_size, drink_price
+
+# def getSubtotal():
+
 
 main()
 

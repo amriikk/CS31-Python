@@ -1,10 +1,10 @@
 
 --------------- Total for Order #1 ---------------
-Chkn-Sandwich            $2.50
-Onion Rings              $1.75
-Medium Lemonade          $2.25
+Cheeseburger                  $3.25
+Side Salad                    $1.50
+Medium Water Cup              $2.25
 
 --------------- Total for Order #2 ---------------
-Cheeseburger             $3.25
-French Fries             $2.25
-Small Sprite             $1.50
+Cheeseburger                  $3.25
+Side Salad                    $1.50
+Medium Coke                   $2.25
