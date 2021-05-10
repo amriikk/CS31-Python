@@ -38,12 +38,12 @@ def main():
         entree, e_price = getEntree()
         side, s_price = getSide()
         drank = getDrank()
-        size = getSize()
+        size, d_price = getSize()
 
         print(f'\n--------------- Total for Order #{receipt} ---------------\n')
         print(f'{entree}\t\t\t\t${e_price:.2f}')
         print(f'{side}\t\t\t\t${s_price:.2f}')
-        print(f'{drank}\t\t\t\t${d_price:.2f}')
+        print(f'{size} {drank}\t\t\t\t${d_price:.2f}')
 
         orders += -1
     
@@ -120,50 +120,21 @@ def getDrank():
 
 def getSize()
     size = int(input('\nEnter\t[1] for Small\n\t[2] for Medium\n\t[3] for Large\n\n'))
-        if size == 1:
-            drink_size = 'Small{drink}'
-            drink_price = 1.50
-        elif size == 2:
-            drink_size = 'Medium{drink}'
-            drink_price = 2.25
-        elif size == 3:
-            drink_size = 'Large{drink}'
-            drink_price = 2.75
-        else:
-            getSize()
-        print(f'{drink_size} {drink}\t\t${drink_price:.2f}')
+    if size == 1:
+        drink_size = 'Small{drink}'
+        drink_price = 1.50
+    elif size == 2:
+        drink_size = 'Medium{drink}'
+        drink_price = 2.25
+    elif size == 3:
+        drink_size = 'Large{drink}'
+        drink_price = 2.75
+    else:
+        getSize()
 
-    return size
+    return drink_size, drink_price
 
 main()
 
 
-        # size = int(input('\nEnter\t[1] for Small\n\t[2] for Medium\n\t[3] for Large\n\n'))
-        # if size == 1:
-        #     drink_size = 'Small'
-        #     drink_price = 1.50
-        # elif size == 2:
-        #     drink_size = 'Medium'
-        #     drink_price = 2.25
-        # elif size == 3:
-        #     drink_size = 'Large'
-        #     drink_price = 2.75
-        # else:
-        #     drink_size = 'Medium'
-        #     drink_price = 2.25
-        # print(f'{drink_size} {drink}\t\t${drink_price:.2f}')
-
-        # size = int(input('\nEnter\t[1] for Small\n\t[2] for Medium\n\t[3] for Large\n\n'))
-        # if size == 1:
-        #     drink_size = 'Small'
-        #     drink_price = 1.50
-        # elif size == 2:
-        #     drink_size = 'Medium'
-        #     drink_price = 2.25
-        # elif size == 3:
-        #     drink_size = 'Large'
-        #     drink_price = 2.75
-        # else:
-        #     drink_size = 'Medium'
-        #     drink_price = 2.25
-        # print(f'{drink_size} {drink}\t\t${drink_price:.2f}')
+    
