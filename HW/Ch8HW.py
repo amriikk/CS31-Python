@@ -21,40 +21,36 @@ def main():
 
  ## Problem 4
     a = [' ', ',', '.', '?', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-    b = [' ', '--..--', '.-.-.-', '..--..', '-----', '.----', '..---', '...--', 
-'....-', '.....', '-....', '--...',
- '---..', '----.', '.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....',
-'..', '.---', '-.-', '.-..', '--',
- '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', 
-'-..-', '-.-', '--..']
- print('--Morse code conversion--')
- mc = input('Enter a string: ')
- t = mc.upper()
- t.split()
- x = []
- for i in range(len(t)):
-    w = t[i]
-    x.append(b[a.index(w)])
- index = 0
- for j in x:
-    print(x[index], end=' ')
- index += 1
- print()
+    b = [' ', '--..--', '.-.-.-', '..--..', '-----', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.', '.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....','..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.-', '--..']
+    print('--Morse code conversion--')
+    mc = input('Enter a string: ')
+    t = mc.upper()
+    t.split()
+    x = []
+    for i in range(len(t)):
+        w = t[i]
+        x.append(b[a.index(w)])
+    index = 0
+    for j in x:
+        print(x[index], end=' ')
+        index += 1
+    print()
 
  ## Problem 5
- print()
- t = input('Enter a phone number(xxx-xxx-xxxx): ')
- t.split('-')
- ph = []
- two = ['A', 'B', 'C']
- three = ['D', 'E', 'F']
- four = ['G', 'H', 'I']
- five = ['J', 'K', 'L']
- six = ['M', 'N', 'O']
- seven = ['P', 'Q', 'R', 'S']
- eight = ['T', 'U', 'V']
- nine = ['W', 'X', 'Y', 'Z']
- for num in t[1:2]:
+    print()
+    t = input('Enter a phone number (Format: xxx-xxx-xxxx): ')
+    t.split('-')
+    ph = []
+    phone = ""
+    two = ['A', 'B', 'C']
+    three = ['D', 'E', 'F']
+    four = ['G', 'H', 'I']
+    five = ['J', 'K', 'L']
+    six = ['M', 'N', 'O']
+    seven = ['P', 'Q', 'R', 'S']
+    eight = ['T', 'U', 'V']
+    nine = ['W', 'X', 'Y', 'Z']
+    for num in t[1:2]:
       for l in t:
         if l.isdigit():
           ph.append(l)
@@ -74,10 +70,9 @@ def main():
           ph.append('8')
         elif l.upper() in nine:
           ph.append('9')
- pt1 = ph[0:3]
- pt2 = ph[3:6]
- pt3 = ph[6:10]
- phone = ""
- print('(',*pt1, ')', *pt2, '-', *pt3, end=' ') to  print('(',*pt1, ')', *pt2, '-', *pt3, sep=' ')
+    pt1 = ph[0:3]
+    pt2 = ph[3:6]
+    pt3 = ph[6:10]
+    print('(',*pt1, ')', *pt2, '-', *pt3, sep=' ')
 
 main()
