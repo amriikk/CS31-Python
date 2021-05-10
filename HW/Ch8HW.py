@@ -73,6 +73,6 @@ def main():
     pt1 = ph[0:3]
     pt2 = ph[3:6]
     pt3 = ph[6:10]
-    print('(',*pt1, ')', *pt2, '-', *pt3, sep=' ')
+    print('(', *pt1, ')', *pt2, '-', *pt3, sep=' ')
 
 main()
