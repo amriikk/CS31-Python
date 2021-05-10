@@ -5,24 +5,23 @@
 # Due Date: 05.01.21
 # ####################################################
 
+
 ## Problem 3
- date = input('Enter date to be converted (Format: mm/dd/yyyy): ')
- months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
- d = date.split('/')
- month = int(d[0])
- for n in range(12):
-  m = months[month-1]
- day = int(d[1])
- year = int(d[2])
- print(m + ' ', day, ', ', year, sep='')
- print()
+def main():
+    date = input('Enter date to be converted (Format: mm/dd/yyyy): ')
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    d = date.split('/')
+    month = int(d[0])
+    for n in range(12):
+        m = months[month-1]
+    day = int(d[1])
+    year = int(d[2])
+    print(m + ' ', day, ', ', year, sep='')
+    print()
 
  ## Problem 4
- a = [' ', ',', '.', '?', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A',
-'B', 'C', 'D', 'E', 'F', 'G', 'H',
- 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
-'X', 'Y', 'Z']
- b = [' ', '--..--', '.-.-.-', '..--..', '-----', '.----', '..---', '...--', 
+    a = [' ', ',', '.', '?', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    b = [' ', '--..--', '.-.-.-', '..--..', '-----', '.----', '..---', '...--', 
 '....-', '.....', '-....', '--...',
  '---..', '----.', '.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....',
 '..', '.---', '-.-', '.-..', '--',
@@ -34,11 +33,11 @@
  t.split()
  x = []
  for i in range(len(t)):
-  w = t[i]
-  x.append(b[a.index(w)])
+    w = t[i]
+    x.append(b[a.index(w)])
  index = 0
  for j in x:
-  print(x[index], end=' ')
+    print(x[index], end=' ')
  index += 1
  print()
 
