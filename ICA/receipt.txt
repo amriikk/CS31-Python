@@ -2,17 +2,8 @@
 --------------- Total for Order #1 ---------------
 Cheeseburger                  $3.25
 Side Salad                    $1.50
-Medium Coke                   $2.25
+Large                         $2.75
 ----------------------------------------------
-Subtotal:					$7.00 
-Tax:						$0.56
-Total:						$7.56
-
---------------- Total for Order #2 ---------------
-Chkn-Sandwich                 $2.50
-No Side                       $0.00
-Water Cup                     $0.00
-----------------------------------------------
-Subtotal:					$2.50 
-Tax:						$0.20
-Total:						$2.70
+Subtotal:					$7.50 
+Tax:						$0.60
+Total:						$8.10

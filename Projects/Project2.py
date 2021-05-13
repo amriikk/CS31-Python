@@ -44,8 +44,6 @@ def main():
         else:
             size, d_price = getSize()
 
-
-
         if receipt == 1:
             file = open('receipt.txt', 'w')
         else:
@@ -121,6 +119,7 @@ def getSide():
 ## Drink function: getDrank()
 def getDrank():
     drink = int(input('\nEnter\t[1] for Coke\n\t[2] for Sprite\n\t[3] for Lemonade\n\t[4] for Water\n\nYour Selection: '))
+    drank = ''
 
     if drink == 1: # Coke Selected
         drank = 'Coke'
@@ -138,6 +137,7 @@ def getDrank():
 ## Size function: getSize()
 def getSize():
     size = int(input('\nEnter\t[1] for Small\n\t[2] for Medium\n\t[3] for Large\n\nYour Selection: '))
+    drink_size = ''
     if size == 1:
         drink_size = 'Small '
         drink_price = 1.50
