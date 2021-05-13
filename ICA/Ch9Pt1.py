@@ -14,7 +14,6 @@ def main():
             print("That school is invalid.")
 
         again = input("Wanna do this again? (y/n) ")
-
     # Part 2
     medals = {'Norway':[14,14,11],'Germany':[14,10,7],'Canada':[11,8,10]}
     medals['USA'] = [9,8,6]
