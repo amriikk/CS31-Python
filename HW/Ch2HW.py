@@ -13,7 +13,7 @@ purchase_Amount = num_Shares * stock_Price
 p_commission = purchase_Amount * 0.03 # stock purchase commission
 net_Purchase = purchase_Amount - p_commission
 
-    ## two weeks later..
+  ## two weeks later..
 
 sell_Price = 42.75 # stock price per share sold
 sell_Amount = num_Shares * sell_Price
