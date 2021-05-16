@@ -5,7 +5,6 @@
 # Due Date: 05.01.21
 # ####################################################
 
-
 ## Problem 3
 def main():
     date = input('Enter date to be converted (Format: mm/dd/yyyy): ')
@@ -75,4 +74,4 @@ def main():
     pt3 = ph[6:10]
     print('(', *pt1, ')', *pt2, '-', *pt3, sep=' ')
 
-main()
+main() ## call main
