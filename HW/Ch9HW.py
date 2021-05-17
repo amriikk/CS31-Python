@@ -6,7 +6,7 @@
 # ####################################################
 
 def main():
-    # Problem 1 
+    # Problem 1 - Course Information
     d1 = {'CS101': 3004, 'CS102': 4501, 'CS103': 6755, 'NT110': 1244, 'CM241': 1411}
     d2 = {'CS101': 'Haynes', 'CS102': 'Alvarado', 'CS103': 'Rich', 'NT110': 'Burke', 'CM241': 'Lee'}
     d3 = {'CS101': '8:00 a.m.', 'CS102': '9:00 a.m.', 'CS103': '10:00 a.m.', 'NT110': '11:00 a.m. ', 'CM241': '1:00 p.m.'}
@@ -18,7 +18,7 @@ def main():
         print('Course not Found.')
     print()
 
-    # Problem 4
+    # Problem 4 - Unique Words
     infile = open('words1.txt', 'r')
     l = []
     for ln in infile:
@@ -29,7 +29,7 @@ def main():
     infile.close()
     print()
 
-    # Problem 6
+    # Problem 6 - File Analysis
     # file 1
     infile1 = open('words1.txt', 'r')
     l1 = []
