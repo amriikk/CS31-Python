@@ -38,4 +38,5 @@ def displayData(d):
     for key in d:
         print(key,'won',d[key][0],'gold medals,',d[key][1],'silver medals, and',
               d[key][2],'bronze medals')
+              
 main()
