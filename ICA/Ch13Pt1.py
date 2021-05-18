@@ -15,7 +15,7 @@ class GUI:
 
         self.label1.pack() # default top side
         self.label2.pack(side='left')
-        self.label3.pack(side='left')
+        self.label3.pack(side='right')
 
         self.top_frame.pack()
         self.bottom_frame.pack()
@@ -23,7 +23,7 @@ class GUI:
         self.button1 = tkinter.Button(self.main_window, text='Click here', command=self.display)
         self.button2 = tkinter.Button(self.main_window, text='Quit', command=self.main_window.destroy)
 
-        self.button1.pack(side='right')
+        self.button1.pack(side='left')
         self.button2.pack(side='left')
 
         tkinter.mainloop()
