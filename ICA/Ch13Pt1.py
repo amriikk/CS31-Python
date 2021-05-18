@@ -21,10 +21,14 @@ class GUI:
         self.bottom_frame.pack()
 
         self.button1 = tkinter.Button(self.main_window, text='Click Here', command=self.display)
+        self.button2 = tkinter.Button(self.main_window, text='Quit', command=self.main_window.destroy)
+
+        self.button1.pack(side='left')
+        self.button2.pack(side='right')
 
         tkinter.mainloop()
 
     def display(self):
-        tkinter.messagebox.showinfor('Success', "That's the end of the ICA")
+        tkinter.messagebox.showinfo('Success', "That's the end of the ICA")
 
 gui = GUI()
