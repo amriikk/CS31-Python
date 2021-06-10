@@ -64,7 +64,11 @@ def main():
 
 def getData(inFile, outFile):
     for player in inFile:
-        print
+        player = player.rstrip('\n')
+        playerInfo = player.split()
+        print('Name:',player)
+        print(playerInfo)
+    inFile.close()
 
 def display(inFile):
     print()
@@ -73,3 +77,4 @@ main()
 
 ## Question 7
 
+## Question 8
