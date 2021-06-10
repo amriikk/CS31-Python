@@ -42,3 +42,10 @@ print('#5:', set2 <= set1) # true
 
 ## Question 5
 print()
+set1 = set([11,22,33,44,55,66,77])
+set2 = set([22,33,44,55])
+print('#1:', set1 | set2)
+print('#2:', set1 & set2)
+print('#3:', set1 - set2)
+print('#4:', set1 ^ set2)
+print('#5:', set2 <= set1) # true
