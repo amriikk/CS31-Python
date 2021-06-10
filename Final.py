@@ -1,3 +1,5 @@
+# CS31: Introduction to Python
+
 ## Question 1
 print()
 matrix = [[0,0,0,0,0],[0,0,0,0,0]]
@@ -49,3 +51,25 @@ print('#2:', set1 & set2)
 print('#3:', set1 - set2)
 print('#4:', set1 ^ set2)
 print('#5:', set1 >= set2) # false
+
+
+## Question 6 
+print()
+def main():
+    inFile = open('kings.txt', 'r')
+    outFile = open('stats.txt', 'w')
+    getData(inFile, outFile)
+    inFile = open('stats.txt', 'r')
+    display(inFile)
+
+def getData(inFile, outFile):
+    for player in inFile:
+        print
+
+def display(inFile):
+    print()
+
+main()
+
+## Question 7
+
