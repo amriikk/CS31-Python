@@ -40,3 +40,5 @@ print('#3:', set1 - set2)
 print('#4:', set1 ^ set2)
 print('#5:', set2 <= set1) # true
 
+## Question 5
+print()
