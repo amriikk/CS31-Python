@@ -1,0 +1,41 @@
+## Question 1
+print()
+matrix = [[0,0,0,0,0],[0,0,0,0,0]]
+inFile = open('nums.txt', 'r')
+for x in range(2):
+    for y in range(5):
+        num = int(inFile.readline())
+        if num < 10:
+            matrix[x][y] = 2 * (num - 3)
+        else:
+            matrix[x][y] = 5 + num // 4
+print(matrix)
+
+## Question 2
+print()
+list1 = [5,6,7,8,9,10,11,12,13,14]
+print('#1:', list1[:4])
+print('#2:', list1[-3:])
+print('#3:', list1[-5:-2])
+print('#4:', list1[3:6])
+print('#5:', list1[2:7:3])
+
+
+## Question 3
+print()
+list2 = ['q','r','s','t','u','v','w','x','y','z']
+print('#1:', list2[2:4])
+print('#2:', list2[-7:-4])
+print('#3:', list2[-8:-4])
+print('#4:', list2[1:9:3])
+print('#5:', list2[-8:-1:4])
+
+## Question 4
+print()
+set1 = set([11,22,33,44,55,66,77])
+set2 = set([22,33,44,55])
+print('#1:', list2[2:4])
+print('#2:', list2[-7:-4])
+print('#3:', list2[-8:-4])
+print('#4:', list2[1:9:3])
+print('#5:', list2[-8:-1:4])
