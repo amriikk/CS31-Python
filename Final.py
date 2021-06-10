@@ -48,4 +48,4 @@ print('#1:', set1 | set2)
 print('#2:', set1 & set2)
 print('#3:', set1 - set2)
 print('#4:', set1 ^ set2)
-print('#5:', set1 >= set2) # 
+print('#5:', set1 >= set2) # false
