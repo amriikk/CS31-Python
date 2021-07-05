@@ -11,7 +11,7 @@ class GUI:
 
         self.label1 = tkinter.Label(self.top_frame, text='John Trujillo')
         self.label2 = tkinter.Label(self.bottom_frame, text='LBCC')
-        self.label3 = tkinter.Label(self.bottom_frame, text='Engineering')
+        self.label3 = tkinter.Label(self.bottom_frame, text=' Software Engineering')
 
         self.label1.pack() # default top side
         self.label2.pack(side='left')
