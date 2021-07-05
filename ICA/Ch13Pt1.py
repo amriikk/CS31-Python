@@ -29,6 +29,6 @@ class GUI:
         tkinter.mainloop()
 
     def display(self):
-        tkinter.messagebox.showinfo('Success', "That's the end of the ICA")
+        tkinter.messagebox.showinfo('Success', "That's the end of the ICA.. lol")
 
 gui = GUI()
