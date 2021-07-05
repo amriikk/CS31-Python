@@ -11,7 +11,7 @@ def main():
 def get_goals(filename):
     goals = [] # empty array
     file = open(filename, 'r')
-    goals = file.readlines() # reads contents of file into list
+    goals = file.readlines() # Reads contents of file into list 
     file.close()
     index = 0
     while index < len(goals):
