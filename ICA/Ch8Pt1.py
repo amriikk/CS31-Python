@@ -5,7 +5,7 @@ def main():
     sum = 0
     again = 'y'
     while again == 'y' or again == 'Y':
-        nums = input('Enter a sequence of numbers: ')
+        nums = input('Enter sequence of numbers: ')
         for ch in nums:
             sum += int(ch)
         print('Sum of digits in', nums, '=', sum)
