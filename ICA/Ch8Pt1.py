@@ -14,7 +14,7 @@ def main():
     # Part 1
     print()
     again = 'y'
-    while again == 'y' or y == 'Y':
+    while again == 'y' or again == 'Y':
         title = input('Enter the movie title: ')
         if len(title) <= 4:
             codept1 = title
