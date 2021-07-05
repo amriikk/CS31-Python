@@ -25,6 +25,6 @@ def main():
         year = input('Enter the 4-digit year movie was released: ')
         codept2 = year[2:]
         print('Code for', title, 'is', codept1 + codept2)
-        again = input('Care to try again? (y/n) ')
+        again = input('Try again? (y/n) ')
         
 main()
